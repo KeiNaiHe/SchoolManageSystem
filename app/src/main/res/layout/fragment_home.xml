@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="首页" />
+    </LinearLayout>
+    <!--ScrollView会屏蔽掉里面GridView的自动换行功能-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <bgabanner.BGABanner
+                android:id="@+id/banner_home"
+                style="@style/BannerDefaultStyle"
+                app:banner_indicatorGravity="bottom|right"
+                app:banner_transitionEffect="zoomStack" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#aaa" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:background="#aaa"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end">
+
+                <TableRow
+                    android:id="@+id/tr_home_tabRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:showDividers="middle|beginning|end">
+
+                    <include
+                        android:id="@+id/layout_tabItem1"
+                        layout="@layout/item_table_home"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/layout_tabItem2"
+                        layout="@layout/item_table_home"
+                        android:layout_width="0dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="0.5dp" />
+
+                    <include
+                        android:id="@+id/layout_tabItem3"
+                        layout="@layout/item_table_home"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="0.5dp"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="0.5dp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tr_home_tabRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:showDividers="middle|beginning|end">
+
+                    <include
+                        android:id="@+id/layout_tabItem4"
+                        layout="@layout/item_table_home"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1" />
+
+                    <include
+                        android:id="@+id/layout_tabItem5"
+                        layout="@layout/item_table_home"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="0.5dp" />
+
+                    <include
+                        android:id="@+id/layout_tabItem6"
+                        layout="@layout/item_table_home"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_marginStart="0.5dp"
+                        android:layout_weight="1" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

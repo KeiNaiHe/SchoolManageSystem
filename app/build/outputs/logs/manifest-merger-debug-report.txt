@@ -1,0 +1,189 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5124264c65aae0933df1b9e27b9aa2ff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\066cf7d0af1206a90690f49e296032f2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\8433a7b6564ad0465f22084152d79446\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:fresco:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\fresco-1.5.0.aar\ef79a687a987ddb3e794e80541fb109c\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f3939bf94a557a7f8adf05b4ffe1827c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\95e7da204fff7c3203a417fd59f5acbb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\198aedf156bde2c114a5f0aa8910a73b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\030b25f1c656d276ac66734800e68137\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\52916f56a48815ee0bf55a282cdc7de0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b54f28dbf03eeb7654603e7ceb02eeea\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\bca207f81cc31be499598ed1c8f17b25\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4a35cf7d45863f71521c110bf150fb98\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\0a61197dd46ea07de61aa3aaa88741f0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:drawee:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\drawee-1.5.0.aar\ecf97a524377dfb289574b236dc51217\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.5.0.aar\6da10bc1ccf65169107a3ce4997bff42\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.5.0.aar\3706a6d3e64e14f85564c23b1f99db43\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\fbcore-1.5.0.aar\b62bf4425f14dc4787df46ff5a71ab9a\AndroidManifest.xml:2:1-9:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6e0f005b790ac8f06cbe0739de0ab973\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cedeeea2145886202de0381bca3f7478\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8120b41675bb33792b37a4f91b62f3bb\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e0ec675be520ebc115633954a1b12077\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+	package
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:6:5-67
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:7:22-78
+application
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:10:5-38:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\8433a7b6564ad0465f22084152d79446\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\8433a7b6564ad0465f22084152d79446\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\0a61197dd46ea07de61aa3aaa88741f0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\0a61197dd46ea07de61aa3aaa88741f0\AndroidManifest.xml:9:5-20
+	android:screenOrientation
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:16:9-45
+	android:supportsRtl
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:14:9-41
+	android:roundIcon
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:15:9-54
+	android:icon
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:13:9-43
+	android:allowBackup
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:18:9-40
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:11:9-61
+activity#huohuo.cn.hncc.guidepage.guideActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:20:9-26:20
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:20:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:24:27-74
+activity#huohuo.cn.hncc.schoolmanagesystem.MainActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:27:9-83
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:27:19-80
+activity#huohuo.cn.hncc.loginpage.LoginActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:28:9-75
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:28:19-72
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.CADDrafterActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:29:9-107
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:29:19-104
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.CheckAllActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:30:9-105
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:30:19-102
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.MyTernsActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:31:9-104
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:31:19-101
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.WeeklyReportActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:32:9-109
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:32:19-106
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.CheckTheNotifiActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:33:9-111
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:33:19-108
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.SignInActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:34:9-103
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:34:19-100
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.SignIn_CalendarActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:35:9-111
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:35:19-109
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.colorful.ColorfulActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:9-104
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:19-102
+uses-sdk
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5124264c65aae0933df1b9e27b9aa2ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5124264c65aae0933df1b9e27b9aa2ff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\066cf7d0af1206a90690f49e296032f2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\066cf7d0af1206a90690f49e296032f2\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\8433a7b6564ad0465f22084152d79446\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\8433a7b6564ad0465f22084152d79446\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.fresco:fresco:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\fresco-1.5.0.aar\ef79a687a987ddb3e794e80541fb109c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\fresco-1.5.0.aar\ef79a687a987ddb3e794e80541fb109c\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f3939bf94a557a7f8adf05b4ffe1827c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f3939bf94a557a7f8adf05b4ffe1827c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\95e7da204fff7c3203a417fd59f5acbb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\95e7da204fff7c3203a417fd59f5acbb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\198aedf156bde2c114a5f0aa8910a73b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\198aedf156bde2c114a5f0aa8910a73b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\030b25f1c656d276ac66734800e68137\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\030b25f1c656d276ac66734800e68137\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\52916f56a48815ee0bf55a282cdc7de0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\52916f56a48815ee0bf55a282cdc7de0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b54f28dbf03eeb7654603e7ceb02eeea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\b54f28dbf03eeb7654603e7ceb02eeea\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\bca207f81cc31be499598ed1c8f17b25\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\bca207f81cc31be499598ed1c8f17b25\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4a35cf7d45863f71521c110bf150fb98\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\4a35cf7d45863f71521c110bf150fb98\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\0a61197dd46ea07de61aa3aaa88741f0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\gifdecoder-4.5.0.aar\0a61197dd46ea07de61aa3aaa88741f0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\drawee-1.5.0.aar\ecf97a524377dfb289574b236dc51217\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\drawee-1.5.0.aar\ecf97a524377dfb289574b236dc51217\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.5.0.aar\6da10bc1ccf65169107a3ce4997bff42\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\imagepipeline-1.5.0.aar\6da10bc1ccf65169107a3ce4997bff42\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.5.0.aar\3706a6d3e64e14f85564c23b1f99db43\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\imagepipeline-base-1.5.0.aar\3706a6d3e64e14f85564c23b1f99db43\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\fbcore-1.5.0.aar\b62bf4425f14dc4787df46ff5a71ab9a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\fbcore-1.5.0.aar\b62bf4425f14dc4787df46ff5a71ab9a\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6e0f005b790ac8f06cbe0739de0ab973\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\6e0f005b790ac8f06cbe0739de0ab973\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cedeeea2145886202de0381bca3f7478\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cedeeea2145886202de0381bca3f7478\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8120b41675bb33792b37a4f91b62f3bb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8120b41675bb33792b37a4f91b62f3bb\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e0ec675be520ebc115633954a1b12077\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e0ec675be520ebc115633954a1b12077\AndroidManifest.xml:20:5-44
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml

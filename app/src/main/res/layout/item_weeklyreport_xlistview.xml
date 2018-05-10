@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contacts_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp">
+        <!--圆形头像框-->
+        <LinearLayout
+            android:id="@+id/ll_temporary"
+            android:layout_width="60dp"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_weeklyReportItem_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_weeklyReportItem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/ll_temporary"
+            android:layout_toRightOf="@id/ll_temporary"
+            android:text="姓名"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_weeklyReportItem_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_weeklyReportItem_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/ll_temporary"
+            android:layout_toRightOf="@id/ll_temporary"
+            android:text="5月5日 12:12"
+            android:textSize="13sp" />
+        <!--个性签名-->
+        <TextView
+            android:id="@+id/tv_weeklyReportItem_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_weeklyReportItem_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/tv_weeklyReportItem_time"
+            android:singleLine="true"
+            android:text="我是个性签名，有字数限制" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_weeklyReportItem_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:text="正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文正文"
+            android:textSize="16sp" />
+
+        <ninegridimageview.NineGridImageView
+            android:id="@+id/ngiv_weeklyReportItem_conPicture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,11 +1,11 @@
 package huohuo.cn.hncc.schoolmanagesystem.homepage;
 
+import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,14 +17,11 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
-
 import java.util.List;
 import java.util.Map;
 
 import bgabanner.BGABanner;
 import huohuo.cn.hncc.guidepage.R;
-
-
 import huohuo.cn.hncc.schoolmanagesystem.App;
 import huohuo.cn.hncc.schoolmanagesystem.MainFragmentBean;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.activity.CADDrafterActivity;
@@ -221,11 +218,12 @@ public class HomeFragment extends Fragment implements BGABanner.Delegate<ImageVi
                     @Override
                     public void fillBannerItem(BGABanner banner, ImageView itemView, @Nullable String model, int position) {
                         //model是图片的url
-                        Glide.with(itemView.getContext())
+                     Glide.with(itemView.getContext())
                                 .load(model)
                                 .apply(new RequestOptions().placeholder(R.drawable.holder).error(R.drawable.holder).dontAnimate().centerCrop())
                                 .into(itemView);
                     }
+
                 });
 
                 //第二个参数为显示的文字集合

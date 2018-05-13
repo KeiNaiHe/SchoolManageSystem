@@ -717,7 +717,7 @@ public class NineGridImageView<T> extends ViewGroup {
      *
      * @param adapter 适配器
      */
-    public void setAdapter(NineGridImageViewAdapter adapter) {
+    public void setAdapter(NineGridImageViewAdapter<T> adapter) {
         mAdapter = adapter;
     }
 

@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,7 +36,7 @@ public class XListViewAdapter extends BaseAdapter {
      * 需要先实现Adapter
      * 再填充数据
      * 除非进行修改里面代码
-     * */
+     */
     private NineGridImageView mNgiv_itemconPicture;
     //正文
     private TextView mTv_itemCon;
@@ -47,6 +48,8 @@ public class XListViewAdapter extends BaseAdapter {
     private TextView mTv_itemTime;
     //九宫格布局
     private NineGridImageViewAdapter mNineGridImageViewAdapter;
+    private ItemImageClickListener mItemClickListener;
+    private View.OnClickListener mOnHeadPortraitClickListener;
 
     public XListViewAdapter(Context context, int layoutResId, Activity activity) {
         this.context = context;
@@ -86,28 +89,33 @@ public class XListViewAdapter extends BaseAdapter {
         return view;
     }
 
+    //头像点击事件
+    public void setOnHeadPortraitClickListener(@NotNull View.OnClickListener listener) {
+        this.mOnHeadPortraitClickListener=listener;
+    }
+
+    //NineGridImage ClickListener
+    public void setOnNineGridImageItemClickListener(@NotNull ItemImageClickListener itemClicklistener) {
+        this.mItemClickListener = itemClicklistener;
+    }
+
+    public void setOnNineGridImageAdapter(@NotNull NineGridImageViewAdapter adapter) {
+        this.mNineGridImageViewAdapter = adapter;
+
+    }
+
     private void initItemAdapter() {
-        mIv_itemHeadPortrait.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "头像被暴击了", Toast.LENGTH_SHORT).show();
-            }
-        });
 
-        mNineGridImageViewAdapter = new NineGridImageViewAdapter() {
-            @Override
-            protected void onDisplayImage(Context context, ImageView imageView, Object o) {
-                GlideImageUtil.loadIntenetImg((String) o, imageView);
-            }
-        };
-        mNgiv_itemconPicture.setAdapter(mNineGridImageViewAdapter);
+        if (mOnHeadPortraitClickListener != null) {
+            mIv_itemHeadPortrait.setOnClickListener(mOnHeadPortraitClickListener);
+        }
 
-        mNgiv_itemconPicture.setItemImageClickListener(new ItemImageClickListener() {
-            @Override
-            public void onItemImageClick(Context context, ImageView imageView, int index, List list) {
-                Toast.makeText(context, "第" + index + "个图片放大", Toast.LENGTH_SHORT).show();
-            }
-        });
+        if (mItemClickListener != null) {
+            mNgiv_itemconPicture.setItemImageClickListener(mItemClickListener);
+        }
+        if (mNineGridImageViewAdapter != null) {
+            mNgiv_itemconPicture.setAdapter(mNineGridImageViewAdapter);
+        }
     }
 
     private void initItemData(int position) {

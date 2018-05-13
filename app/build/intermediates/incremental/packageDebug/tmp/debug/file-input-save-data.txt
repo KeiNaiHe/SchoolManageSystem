@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu May 10 08:03:15 CST 2018
+#Sun May 13 21:01:58 CST 2018
 4.path=classes.dex
 8.set=NATIVE_RESOURCE
 6.path=lib/armeabi/libimagepipeline.so

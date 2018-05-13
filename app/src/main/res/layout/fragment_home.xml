@@ -5,17 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:gravity="center">
+        android:layout_height="56dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:layout_centerInParent="true"
             android:text="首页" />
-    </LinearLayout>
+    </RelativeLayout>
     <!--ScrollView会屏蔽掉里面GridView的自动换行功能-->
     <ScrollView
         android:layout_width="match_parent"

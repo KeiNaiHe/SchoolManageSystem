@@ -24,6 +24,7 @@ public class App extends Application {
         super.onCreate();
 
         sInstance = this;
+        //猜测可能当没有网络时此处会报错
         mEngine = new Retrofit.Builder()
                 .baseUrl("http://7xk9dj.com1.z0.glb.clouddn.com/banner/api/")
                 .addConverterFactory(GsonConverterFactory.create())

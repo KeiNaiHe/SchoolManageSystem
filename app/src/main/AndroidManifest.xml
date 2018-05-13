@@ -34,6 +34,7 @@
         <activity android:name="huohuo.cn.hncc.schoolmanagesystem.homepage.activity.SignInActivity" />
         <activity android:name="huohuo.cn.hncc.schoolmanagesystem.homepage.activity.SignIn_CalendarActivity"/>
         <activity android:name="huohuo.cn.hncc.schoolmanagesystem.homepage.colorful.ColorfulActivity"/>
+        <activity android:name="huohuo.cn.hncc.schoolmanagesystem.StudentInfoActivity"/>
 
     </application>
 

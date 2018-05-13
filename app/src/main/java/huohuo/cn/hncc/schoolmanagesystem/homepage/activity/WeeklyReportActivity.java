@@ -1,10 +1,14 @@
 package huohuo.cn.hncc.schoolmanagesystem.homepage.activity;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -12,13 +16,17 @@ import java.util.Date;
 import java.util.List;
 
 import huohuo.cn.hncc.guidepage.R;
+import huohuo.cn.hncc.schoolmanagesystem.GlideImageUtil;
+import huohuo.cn.hncc.schoolmanagesystem.StudentInfoActivity;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.XListViewAdapter;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.XListViewBean;
+import ninegridimageview.ItemImageClickListener;
+import ninegridimageview.NineGridImageViewAdapter;
 import view.XListView;
 
 /**
- * Created by Windows on 2018/5/3.
  *
+ * Created by Windows on 2018/5/3.
  */
 
 public class WeeklyReportActivity extends Activity {
@@ -26,6 +34,7 @@ public class WeeklyReportActivity extends Activity {
     private XListView mXListView;
     private ImageButton mIb_back;
     private List<XListViewBean> mList_xListView;
+    private XListViewAdapter mXListViewAdapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -40,15 +49,15 @@ public class WeeklyReportActivity extends Activity {
     }
 
     private void initView() {
-        mXListView = (XListView) findViewById(R.id.xlv_weeklyReport_con);
-        mIb_back = (ImageButton) findViewById(R.id.ib_weeklyReport_back);
+        mXListView =  findViewById(R.id.xlv_weeklyReport_con);
+        mIb_back =  findViewById(R.id.ib_weeklyReport_back);
     }
 
     private void initData() {
         mList_xListView = new ArrayList<>();
-        /**
-         * 图片类型全部为URL
-         */
+
+         //图片类型全部为URL
+
         XListViewBean bean = new XListViewBean();
         bean.setHeadPortrait("http://imgsrc.baidu.com/forum/w=580/sign=1588b7c5d739b6004dce0fbfd9503526/7bec54e736d12f2eb97e1a464dc2d56285356898.jpg");
         bean.setName("祝皮皮");
@@ -90,9 +99,43 @@ public class WeeklyReportActivity extends Activity {
             }
         });
 
-        final XListViewAdapter mXListViewAdapter = new XListViewAdapter
-                (WeeklyReportActivity.this, R.layout.item_weeklyreport_xlistview,
-                        WeeklyReportActivity.this);
+        mXListViewAdapter = new XListViewAdapter(WeeklyReportActivity.this,
+                R.layout.item_weeklyreport_xlistview,
+                WeeklyReportActivity.this);
+
+        mXListViewAdapter.setOnHeadPortraitClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //需要带点数据过去，以确认该生身份
+                startActivity(new Intent(WeeklyReportActivity.this, StudentInfoActivity.class));
+            }
+        });
+        mXListViewAdapter.setOnNineGridImageAdapter(new NineGridImageViewAdapter() {
+            @Override
+            protected void onDisplayImage(Context context, ImageView imageView, Object o) {
+                GlideImageUtil.loadIntenetImg((String) o,imageView);
+            }
+
+            @Override
+            protected void onItemImageClick(Context context, ImageView imageView, int index, List list) {
+                //NineGrid ItemClickView
+                Log.i("11ImageClickListener","相应");
+            }
+
+            @Override
+            protected boolean onItemImageLongClick(Context context, ImageView imageView, int index, List list) {
+                //NineGrid ItemLongClickView
+                return false;
+            }
+        });
+
+        mXListViewAdapter.setOnNineGridImageItemClickListener(new ItemImageClickListener() {
+            @Override
+            public void onItemImageClick(Context context, ImageView imageView, int index, List list) {
+                Log.i("ImageItemClickListener","相应");
+            }
+        });
+
         mXListViewAdapter.setXListViewData(mList_xListView);
         mXListView.setAdapter(mXListViewAdapter);
 

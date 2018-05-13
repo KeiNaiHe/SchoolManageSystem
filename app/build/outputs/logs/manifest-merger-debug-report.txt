@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\5124264c65aae0933df1b9e27b9aa2ff\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\066cf7d0af1206a90690f49e296032f2\AndroidManifest.xml:17:1-22:12
@@ -26,20 +26,20 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Windows\.gradle\cach
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cedeeea2145886202de0381bca3f7478\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8120b41675bb33792b37a4f91b62f3bb\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e0ec675be520ebc115633954a1b12077\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-40:12
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:11-69
@@ -52,7 +52,7 @@ ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidMani
 	android:name
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:10:5-38:19
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:10:5-39:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.5.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\glide-4.5.0.aar\8433a7b6564ad0465f22084152d79446\AndroidManifest.xml:11:5-20
@@ -129,6 +129,10 @@ activity#huohuo.cn.hncc.schoolmanagesystem.homepage.colorful.ColorfulActivity
 ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:9-104
 	android:name
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:19-102
+activity#huohuo.cn.hncc.schoolmanagesystem.StudentInfoActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:37:9-89
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:37:19-87
 uses-sdk
 INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml

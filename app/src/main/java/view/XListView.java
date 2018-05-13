@@ -330,7 +330,7 @@ public class XListView extends ListView implements OnScrollListener {
                             @Override
                             public void run() {
                                 startLoadMore();
-                                mFooterView.hide();
+                                mFooterView.setState(XListViewFooter.STATE_NORMAL);
                             }
                         },1500);
 

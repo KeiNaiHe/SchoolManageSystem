@@ -3,7 +3,8 @@ package huohuo.cn.hncc.schoolmanagesystem.homepage.solay;
 import android.content.Context;
 import android.view.LayoutInflater;
 
-import calendar.haibin.com.WeekBar;
+import com.haibin.calendarview.WeekBar;
+
 import huohuo.cn.hncc.guidepage.R;
 
 

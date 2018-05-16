@@ -90,7 +90,7 @@
         </FrameLayout>
     </RelativeLayout>
 
-    <calendar.haibin.com.CalendarLayout
+    <com.haibin.calendarview.CalendarLayout
         android:id="@+id/calendarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
         android:orientation="vertical"
         app:calendar_content_view_id="@+id/recyclerView">
 
-        <calendar.haibin.com.CalendarView
+        <com.haibin.calendarview.CalendarView
             android:id="@+id/calendarView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -141,7 +141,7 @@
             <!--app:group_text_color="#555555"-->
             <!--app:group_text_size="14sp" />-->
 
-    </calendar.haibin.com.CalendarLayout>
+    </com.haibin.calendarview.CalendarLayout>
 
 
 </LinearLayout>

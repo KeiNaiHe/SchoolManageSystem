@@ -31,8 +31,24 @@
 
     </RelativeLayout>
 
-    <view.XListView
-        android:id="@+id/xlv_weeklyReport_con"
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_weeklyReport_refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:id="@+id/srl_weeklyReport_classicHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/lv_weeklyReport_con"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+        android:id="@+id/srl_weeklyReport_classicFooter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

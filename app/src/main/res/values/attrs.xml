@@ -1,157 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="BGABanner">
-        <!-- 指示点容器背景 -->
-        <attr name="banner_pointContainerBackground" format="reference|color"/>
-        <!-- 指示点背景 -->
-        <attr name="banner_pointDrawable" format="reference"/>
-        <!-- 指示点容器左右内间距 -->
-        <attr name="banner_pointContainerLeftRightPadding" format="dimension"/>
-        <!-- 指示点上下外间距 -->
-        <attr name="banner_pointTopBottomMargin" format="dimension"/>
-        <!-- 指示点左右外间距 -->
-        <attr name="banner_pointLeftRightMargin" format="dimension"/>
-        <!-- 指示器的位置 -->
-        <attr name="banner_indicatorGravity">
-            <flag name="top" value="0x30"/>
-            <flag name="bottom" value="0x50"/>
-            <flag name="left" value="0x03"/>
-            <flag name="right" value="0x05"/>
-            <flag name="center_horizontal" value="0x01"/>
-        </attr>
-        <!-- 是否开启自动轮播 -->
-        <attr name="banner_pointAutoPlayAble" format="boolean"/>
-        <!-- 自动轮播的时间间隔 -->
-        <attr name="banner_pointAutoPlayInterval" format="integer"/>
-        <!-- 页码切换过程的时间长度 -->
-        <attr name="banner_pageChangeDuration" format="integer"/>
-        <!-- 页面切换的动画效果 -->
-        <attr name="banner_transitionEffect" format="enum">
-            <enum name="defaultEffect" value="0"/>
-            <enum name="alpha" value="1"/>
-            <enum name="rotate" value="2"/>
-            <enum name="cube" value="3"/>
-            <enum name="flip" value="4"/>
-            <enum name="accordion" value="5"/>
-            <enum name="zoomFade" value="6"/>
-            <enum name="fade" value="7"/>
-            <enum name="zoomCenter" value="8"/>
-            <enum name="zoomStack" value="9"/>
-            <enum name="stack" value="10"/>
-            <enum name="depth" value="11"/>
-            <enum name="zoom" value="12"/>
-        </attr>
-        <!-- 提示文案的文字颜色 -->
-        <attr name="banner_tipTextColor" format="reference|color"/>
-        <!-- 提示文案的文字大小 -->
-        <attr name="banner_tipTextSize" format="dimension"/>
-        <!-- 加载网络数据时覆盖在 BGABanner 最上层的占位图 -->
-        <attr name="banner_placeholderDrawable" format="reference"/>
-        <!-- 是否是数字指示器 -->
-        <attr name="banner_isNumberIndicator" format="boolean"/>
-        <!-- 数字指示器文字颜色 -->
-        <attr name="banner_numberIndicatorTextColor" format="reference|color"/>
-        <!-- 数字指示器文字大小 -->
-        <attr name="banner_numberIndicatorTextSize" format="dimension"/>
-        <!-- 数字指示器背景 -->
-        <attr name="banner_numberIndicatorBackground" format="reference"/>
-        <!-- 当只有一页数据时是否显示指示器，默认值为 false -->
-        <attr name="banner_isNeedShowIndicatorOnOnlyOnePage" format="boolean"/>
-        <!-- 自动轮播区域距离 BGABanner 底部的距离 -->
-        <attr name="banner_contentBottomMargin" format="dimension"/>
-        <!-- 宽高比例，如果大于 0，则会根据宽度来计算高度，否则使用 android:layout_height 指定的高度 -->
-        <attr name="banner_aspectRatio" format="float"/>
-        <!-- 占位图和资源图片缩放模式 -->
-        <attr name="android:scaleType"/>
-    </declare-styleable>
-
-    <declare-styleable name="CalendarView">
-
-        <attr name="week_background" format="color" />
-        <attr name="week_line_background" format="color" />
-        <attr name="week_text_color" format="color" />
-
-        <attr name="month_view" format="string" /><!--完全自定义月视图-->
-
-        <attr name="week_view" format="string" /> <!--完全自定义周视图-->
-        <attr name="week_bar_height" format="dimension" /> <!--星期栏的高度-->
-        <attr name="week_bar_view" format="string" /> <!--如果需要的话使用自定义星期栏-->
-
-        <attr name="scheme_text" format="string" />
-        <attr name="day_text_size" format="dimension" />
-        <attr name="lunar_text_size" format="dimension" />
-        <attr name="calendar_height" format="dimension" />
-        <attr name="scheme_text_color" format="color" />
-        <attr name="scheme_month_text_color" format="color" />
-        <attr name="scheme_lunar_text_color" format="color" />
-        <attr name="scheme_theme_color" format="color" />
-
-        <attr name="selected_theme_color" format="color" />
-        <attr name="selected_text_color" format="color" />
-        <attr name="selected_lunar_text_color" format="color" />
-
-        <attr name="current_day_text_color" format="color" />
-        <attr name="current_day_lunar_text_color" format="color" />
-        <attr name="current_month_text_color" format="color" />
-        <attr name="other_month_text_color" format="color" />
-        <attr name="current_month_lunar_text_color" format="color" />
-        <attr name="other_month_lunar_text_color" format="color" />
 
 
-        <!-- 年视图相关 -->
-        <attr name="year_view_month_text_size" format="dimension" />
-        <attr name="year_view_day_text_size" format="dimension" />
-        <attr name="year_view_month_text_color" format="color" />
-        <attr name="year_view_day_text_color" format="color" />
-        <attr name="year_view_scheme_color" format="color" />
-        <attr name="year_view_background" format="color" />
 
-        <!--日期范围-->
-        <attr name="min_year" format="integer" />
-        <attr name="max_year" format="integer" />
-        <attr name="min_year_month" format="integer" />
-        <attr name="max_year_month" format="integer" />
 
-        <!--月视图是否可滚动-->
-        <attr name="month_view_scrollable" format="boolean" />
-        <!--周视图是否可滚动-->
-        <attr name="week_view_scrollable" format="boolean" />
-
-        <!-- 月份显示模式 -->
-        <attr name="month_view_show_mode">
-            <enum name="mode_all" value="0" />
-            <enum name="mode_only_current" value="1" />
-            <enum name="mode_fix" value="2" />
-        </attr>
-
-        <!-- 自定义周起始 -->
-        <attr name="week_start_with">
-            <enum name="sun" value="1" />
-            <enum name="mon" value="2" />
-            <enum name="sat" value="7" />
-        </attr>
-
-        <!--<attr name="select_mode">-->
-        <!--<enum name="default_mode" value="0"/>-->
-        <!--<enum name="single_mode" value="1"/>-->
-        <!--</attr>-->
-    </declare-styleable>
-
-    <declare-styleable name="CalendarLayout">
-        <attr name="default_status">
-            <enum name="expand" value="0" />
-            <enum name="shrink" value="1" />
-        </attr>
-
-        <attr name="calendar_show_mode">
-            <enum name="both_month_week_view" value="0" />
-            <enum name="only_week_view" value="1" />
-            <enum name="only_month_view" value="2" />
-        </attr>
-
-        <attr name="calendar_content_view_id" format="integer" />
-    </declare-styleable>
     <declare-styleable name="GroupRecyclerView">
         <attr name="group_height" format="dimension" />
         <attr name="group_child_offset" format="dimension" />
@@ -164,15 +17,7 @@
         <attr name="group_has_header" format="boolean" />
     </declare-styleable>
 
-    <declare-styleable name="NineGridImageView">
-        <attr format="dimension" name="singleImgSize"/>
-        <attr format="dimension" name="imgGap"/>
-        <attr format="integer" name="maxSize"/>
-        <attr format="enum" name="showStyle">
-            <enum name="grid" value="0"/>
-            <enum name="fill" value="1"/>
-        </attr>
-    </declare-styleable>
+
 
     <declare-styleable name="CircleImageView">
 

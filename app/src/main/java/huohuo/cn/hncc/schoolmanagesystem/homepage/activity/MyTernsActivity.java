@@ -1,15 +1,13 @@
 package huohuo.cn.hncc.schoolmanagesystem.homepage.activity;
 
 import android.app.Activity;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
-import android.widget.Button;
 import android.widget.ExpandableListView;
-import android.widget.ImageView;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,7 +24,7 @@ import huohuo.cn.hncc.schoolmanagesystem.homepage.MyTerns_SuperItemBean;
 public class MyTernsActivity extends Activity {
 
     private ExpandableListView mExpandListView;
-    private Button mBtn_back;
+    private ImageButton mIb_back;
     private List<List<MyTerns_ChildItemBean>> mList_childList;
     private List<MyTerns_SuperItemBean> mList_super;
 
@@ -44,7 +42,7 @@ public class MyTernsActivity extends Activity {
         mList_super = new ArrayList<>();
         mList_childList = new ArrayList<>();
 
-        mBtn_back.setOnClickListener(new View.OnClickListener() {
+        mIb_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
@@ -104,20 +102,13 @@ public class MyTernsActivity extends Activity {
                 }
 
                 //设置数据
-                ImageView iv_photo = (ImageView)view.findViewById(R.id.iv_myTernsSuper_photo);
+
                 TextView tv_descript = view.findViewById(R.id.tv_myTernsSuper_descript);
-                ImageView iv_show = view.findViewById(R.id.iv_myTernsSuper_show);
 
                 MyTerns_SuperItemBean bean = mList_super.get(groupPosition);
-                iv_photo.setImageBitmap(BitmapFactory.decodeResource(getResources(), (Integer) bean.getObj()));
+
                 tv_descript.setText(bean.getDescript());
 
-                //切换图片
-                if(isExpanded){
-                    iv_show.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.more_desc));
-                }else{
-                    iv_show.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.less_desc));
-                }
                 return view;
             }
 
@@ -129,7 +120,7 @@ public class MyTernsActivity extends Activity {
                 } else {
                     view = convertView;
                 }
-                ImageView iv_photo = (ImageView) view.findViewById(R.id.iv_myTernsChild_photo);
+                TextView tv_photo = (TextView) view.findViewById(R.id.tv_myTernsChild_photo);
                 TextView tv_name = (TextView) view.findViewById(R.id.tv_myTernsChild_name);
                 TextView tv_stuNo = (TextView) view.findViewById(R.id.tv_myTernsChild_stuNo);
 
@@ -138,26 +129,22 @@ public class MyTernsActivity extends Activity {
 
                 tv_name.setText(childBean.getName());
                 tv_stuNo.setText(childBean.getStuNo());
-                iv_photo.setImageBitmap(BitmapFactory.decodeResource(getResources(), (Integer) childBean.getObjPhoto()));
+                tv_photo.setText((CharSequence) childBean.getObjPhoto());
 
                 return view;
             }
 
             @Override
             public boolean isChildSelectable(int groupPosition, int childPosition) {
-                //子类item点击事件
-                /**
-                 * 点击某条item，应该把当前item的信息传到个人信息界面
-                 * 个人信息界面网络获取数据缓存到本地，在显示到页面上
-                 * 此处不写，有点多
-                 * */
+                //子类item显示事件
+
                 return false;
             }
         });
     }
 
     private void initView() {
-        mBtn_back = (Button) findViewById(R.id.btn_myTerns_back);
+        mIb_back = (ImageButton) findViewById(R.id.ib_myTerns_back);
         mExpandListView = (ExpandableListView) findViewById(R.id.expand_myTerns_content_);
     }
 
@@ -172,44 +159,40 @@ public class MyTernsActivity extends Activity {
          * */
 
 
-
-
-
-
         List<MyTerns_ChildItemBean> list = new ArrayList<>();
         MyTerns_ChildItemBean bean = new MyTerns_ChildItemBean();
-        bean.setName("张三");
-        bean.setObjPhoto(R.mipmap.ic_launcher_round);
-        bean.setStuNo("111111111111");
+        bean.setName("张启迪");
+        bean.setObjPhoto("启迪");
+        bean.setStuNo("2016036854");
         list.add(bean);
         MyTerns_ChildItemBean bean1 = new MyTerns_ChildItemBean();
-        bean1.setName("李四");
-        bean1.setObjPhoto(R.mipmap.ic_launcher_round);
-        bean1.setStuNo("22222222222");
+        bean1.setName("朱文琪");
+        bean1.setObjPhoto("文琪");
+        bean1.setStuNo("2016845967");
         list.add(bean1);
 
         MyTerns_SuperItemBean superItemBean1 = new MyTerns_SuperItemBean();
         superItemBean1.setDescript("一年级五班");
-        superItemBean1.setObj(R.mipmap.ic_launcher_round);
+        //superItemBean1.setObj(R.mipmap.ic_launcher_round);
 
         mList_childList.add(list);
         mList_super.add(superItemBean1);
 
         List<MyTerns_ChildItemBean> list1 = new ArrayList<>();
         MyTerns_ChildItemBean bean2 = new MyTerns_ChildItemBean();
-        bean2.setName("王五");
-        bean2.setObjPhoto(R.mipmap.ic_launcher_round);
-        bean2.setStuNo("333333333");
+        bean2.setName("刘天");
+        bean2.setObjPhoto("刘天");
+        bean2.setStuNo("20187459");
         list1.add(bean2);
         MyTerns_ChildItemBean bean3 = new MyTerns_ChildItemBean();
         bean3.setName("赵柳");
-        bean3.setObjPhoto(R.mipmap.ic_launcher_round);
-        bean3.setStuNo("4444444444");
+        bean3.setObjPhoto("赵柳");
+        bean3.setStuNo("201765425");
         list1.add(bean3);
 
         MyTerns_SuperItemBean superItemBean = new MyTerns_SuperItemBean();
         superItemBean.setDescript("二年级五班");
-        superItemBean.setObj(R.mipmap.ic_launcher_round);
+        //superItemBean.setObj(R.mipmap.ic_launcher_round);
 
         mList_childList.add(list1);
         mList_super.add(superItemBean);

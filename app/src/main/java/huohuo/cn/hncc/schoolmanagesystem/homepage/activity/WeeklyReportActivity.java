@@ -4,11 +4,21 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ListView;
+import android.widget.Toast;
+
+import com.jaeger.ninegridimageview.ItemImageClickListener;
+import com.jaeger.ninegridimageview.NineGridImageViewAdapter;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
+import com.scwang.smartrefresh.layout.header.ClassicsHeader;
+import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -20,21 +30,21 @@ import huohuo.cn.hncc.schoolmanagesystem.GlideImageUtil;
 import huohuo.cn.hncc.schoolmanagesystem.StudentInfoActivity;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.XListViewAdapter;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.XListViewBean;
-import ninegridimageview.ItemImageClickListener;
-import ninegridimageview.NineGridImageViewAdapter;
-import view.XListView;
+
 
 /**
- *
  * Created by Windows on 2018/5/3.
  */
 
 public class WeeklyReportActivity extends Activity {
 
-    private XListView mXListView;
+    private ListView mListView;
     private ImageButton mIb_back;
-    private List<XListViewBean> mList_xListView;
+    private List<XListViewBean> mList_ListData;
     private XListViewAdapter mXListViewAdapter;
+    private ClassicsHeader mClassicHeader;
+    private ClassicsFooter mClassicsFooter;
+    private SmartRefreshLayout mSamrtRefreshLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,14 +59,17 @@ public class WeeklyReportActivity extends Activity {
     }
 
     private void initView() {
-        mXListView =  findViewById(R.id.xlv_weeklyReport_con);
-        mIb_back =  findViewById(R.id.ib_weeklyReport_back);
+        mListView = findViewById(R.id.lv_weeklyReport_con);
+        mIb_back = findViewById(R.id.ib_weeklyReport_back);
+        mClassicHeader = (ClassicsHeader) findViewById(R.id.srl_weeklyReport_classicHeader);
+        mClassicsFooter = (ClassicsFooter) findViewById(R.id.srl_weeklyReport_classicFooter);
+        mSamrtRefreshLayout = (SmartRefreshLayout) findViewById(R.id.srl_weeklyReport_refreshLayout);
     }
 
     private void initData() {
-        mList_xListView = new ArrayList<>();
+        mList_ListData = new ArrayList<>();
 
-         //图片类型全部为URL
+        //图片类型全部为URL
 
         XListViewBean bean = new XListViewBean();
         bean.setHeadPortrait("http://imgsrc.baidu.com/forum/w=580/sign=1588b7c5d739b6004dce0fbfd9503526/7bec54e736d12f2eb97e1a464dc2d56285356898.jpg");
@@ -72,7 +85,7 @@ public class WeeklyReportActivity extends Activity {
         list.add("https://img5q.duitang.com/uploads/item/201410/18/20141018201220_UELnM.jpeg");
         list.add("http://www.qqzhi.com/uploadpic/2015-01-10/160955418.jpg");
         bean.setListSrc(list);
-        mList_xListView.add(bean);
+        mList_ListData.add(bean);
 
         bean = new XListViewBean();
         bean.setHeadPortrait("http://imgtu.5011.net/uploads/content/20170209/4934501486627131.jpg");
@@ -86,7 +99,7 @@ public class WeeklyReportActivity extends Activity {
         list.add("http://www.5wants.cc/WEB/File/U3325P704T93D1661F3923DT20090612155225.jpg");
         list.add("http://img1.imgtn.bdimg.com/it/u=2202196942,3715188487&fm=27&gp=0.jpg");
         bean.setListSrc(list);
-        mList_xListView.add(bean);
+        mList_ListData.add(bean);
 
 
     }
@@ -113,37 +126,25 @@ public class WeeklyReportActivity extends Activity {
         mXListViewAdapter.setOnNineGridImageAdapter(new NineGridImageViewAdapter() {
             @Override
             protected void onDisplayImage(Context context, ImageView imageView, Object o) {
-                GlideImageUtil.loadIntenetImg((String) o,imageView);
+                GlideImageUtil.loadIntenetImg((String) o, imageView);
             }
 
-            @Override
-            protected void onItemImageClick(Context context, ImageView imageView, int index, List list) {
-                //NineGrid ItemClickView
-                Log.i("11ImageClickListener","相应");
-            }
-
-            @Override
-            protected boolean onItemImageLongClick(Context context, ImageView imageView, int index, List list) {
-                //NineGrid ItemLongClickView
-                return false;
-            }
         });
 
         mXListViewAdapter.setOnNineGridImageItemClickListener(new ItemImageClickListener() {
             @Override
             public void onItemImageClick(Context context, ImageView imageView, int index, List list) {
-                Log.i("ImageItemClickListener","相应");
+                Toast.makeText(context, "这是第"+index+1+"张图", Toast.LENGTH_SHORT).show();
             }
         });
 
-        mXListViewAdapter.setXListViewData(mList_xListView);
-        mXListView.setAdapter(mXListViewAdapter);
+        mXListViewAdapter.setXListViewData(mList_ListData);
+        mListView.setAdapter(mXListViewAdapter);
 
-        mXListView.setXListViewListener(new XListView.IXListViewListener() {
+        //SmartRefreshLayout设置刷新和加载更多监听
+        mSamrtRefreshLayout.setOnRefreshLoadMoreListener(new OnRefreshLoadMoreListener() {
             @Override
-            public void onRefresh() {
-                //刷新
-
+            public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
                 XListViewBean bean = new XListViewBean();
                 bean.setHeadPortrait("http://p1.qzone.la/upload/3/c2btmgha.jpg");
                 bean.setName("张水军");
@@ -156,13 +157,14 @@ public class WeeklyReportActivity extends Activity {
                 list.add("http://www.5wants.cc/WEB/File/U3325P704T93D1661F3923DT20090612155225.jpg");
                 list.add("http://img.jsqq.net/uploads/allimg/140323/1_140323070820_12.jpg");
                 bean.setListSrc(list);
-                mList_xListView.add(bean);
+
+                mList_ListData.add(bean);
                 mXListViewAdapter.notifyDataSetChanged();
+                refreshLayout.finishLoadMore(2000);
             }
 
             @Override
-            public void onLoadMore() {
-                //加载更多
+            public void onRefresh(@NonNull RefreshLayout refreshLayout) {
                 XListViewBean bean = new XListViewBean();
                 bean.setHeadPortrait("http://imgtu.5011.net/uploads/content/20170209/4934501486627131.jpg");
                 bean.setName("范继科");
@@ -176,10 +178,11 @@ public class WeeklyReportActivity extends Activity {
                 list.add("http://img1.imgtn.bdimg.com/it/u=2202196942,3715188487&fm=27&gp=0.jpg");
                 bean.setListSrc(list);
 
-
-                mList_xListView.add(bean);
+                mList_ListData.add(bean);
                 mXListViewAdapter.notifyDataSetChanged();
+                refreshLayout.finishRefresh(2000);
             }
         });
+
     }
 }

@@ -4,8 +4,9 @@ import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 
-import calendar.haibin.com.Calendar;
-import calendar.haibin.com.WeekBar;
+import com.haibin.calendarview.Calendar;
+import com.haibin.calendarview.WeekBar;
+
 import huohuo.cn.hncc.guidepage.R;
 
 /**

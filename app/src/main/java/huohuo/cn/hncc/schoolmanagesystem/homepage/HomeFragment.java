@@ -3,6 +3,7 @@ package huohuo.cn.hncc.schoolmanagesystem.homepage;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -20,7 +21,7 @@ import com.bumptech.glide.request.RequestOptions;
 import java.util.List;
 import java.util.Map;
 
-import bgabanner.BGABanner;
+import cn.bingoogolapple.bgabanner.BGABanner;
 import huohuo.cn.hncc.guidepage.R;
 import huohuo.cn.hncc.schoolmanagesystem.App;
 import huohuo.cn.hncc.schoolmanagesystem.MainFragmentBean;
@@ -57,6 +58,14 @@ public class HomeFragment extends Fragment implements BGABanner.Delegate<ImageVi
                     "查看通知",
                     "全部"
             };
+    private int picture[] = {
+            R.mipmap.me_group_icon,
+            R.mipmap.icon_sign,
+            R.mipmap.icon_report,
+            R.mipmap.icon_post,
+            R.mipmap.message_icon,
+            R.mipmap.find_friend_icon
+    };
 
     private GridView mGv_main;
     private List<Map<String, Object>> mList_data;
@@ -135,6 +144,7 @@ public class HomeFragment extends Fragment implements BGABanner.Delegate<ImageVi
 //        05-03 05:07:48.546 1511-1578/system_process E/SoundPool: Error creating AudioTrack
 
         ImageView iv_icon = (ImageView) view.findViewById(R.id.iv_homeTable_icon);
+        iv_icon.setImageBitmap(BitmapFactory.decodeResource(getResources(),picture[pos]));
         TextView tv_desc = (TextView) view.findViewById(R.id.tv_homeTable_desc);
 
         tv_desc.setText(desc[pos]);
@@ -218,7 +228,7 @@ public class HomeFragment extends Fragment implements BGABanner.Delegate<ImageVi
                     @Override
                     public void fillBannerItem(BGABanner banner, ImageView itemView, @Nullable String model, int position) {
                         //model是图片的url
-                     Glide.with(itemView.getContext())
+                        Glide.with(itemView.getContext())
                                 .load(model)
                                 .apply(new RequestOptions().placeholder(R.drawable.holder).error(R.drawable.holder).dontAnimate().centerCrop())
                                 .into(itemView);

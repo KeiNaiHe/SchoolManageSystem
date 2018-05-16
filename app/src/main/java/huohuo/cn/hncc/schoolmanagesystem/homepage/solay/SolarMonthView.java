@@ -5,10 +5,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 
+import com.haibin.calendarview.Calendar;
+import com.haibin.calendarview.MonthView;
+
 import java.util.List;
 
-import calendar.haibin.com.Calendar;
-import calendar.haibin.com.MonthView;
+
 
 
 /**

@@ -3,8 +3,8 @@ package huohuo.cn.hncc.schoolmanagesystem.homepage.colorful;
 import android.content.Context;
 import android.graphics.Canvas;
 
-import calendar.haibin.com.Calendar;
-import calendar.haibin.com.MonthView;
+import com.haibin.calendarview.Calendar;
+import com.haibin.calendarview.MonthView;
 
 
 /**

@@ -8,12 +8,13 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.haibin.calendarview.Calendar;
+import com.haibin.calendarview.CalendarLayout;
+import com.haibin.calendarview.CalendarView;
+
 import java.util.ArrayList;
 import java.util.List;
 
-import calendar.haibin.com.Calendar;
-import calendar.haibin.com.CalendarLayout;
-import calendar.haibin.com.CalendarView;
 import huohuo.cn.hncc.guidepage.R;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.Article;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.ArticleAdapter;

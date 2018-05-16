@@ -7,14 +7,14 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="56dp">
+        android:layout_height="50dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
             android:layout_centerInParent="true"
-            android:text="首页" />
+            android:text="首页"
+            android:textSize="20sp" />
     </RelativeLayout>
     <!--ScrollView会屏蔽掉里面GridView的自动换行功能-->
     <ScrollView
@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <bgabanner.BGABanner
+            <cn.bingoogolapple.bgabanner.BGABanner
                 android:id="@+id/banner_home"
                 style="@style/BannerDefaultStyle"
                 app:banner_indicatorGravity="bottom|right"
@@ -64,11 +64,11 @@
                         android:id="@+id/layout_tabItem2"
                         layout="@layout/item_table_home"
                         android:layout_width="0dp"
+                        android:layout_height="100dp"
                         android:layout_marginBottom="0.5dp"
                         android:layout_marginLeft="0.5dp"
-                        android:layout_height="100dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="0.5dp" />
+                        android:layout_marginStart="0.5dp"
+                        android:layout_weight="1" />
 
                     <include
                         android:id="@+id/layout_tabItem3"
@@ -77,8 +77,8 @@
                         android:layout_height="100dp"
                         android:layout_marginBottom="0.5dp"
                         android:layout_marginLeft="0.5dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="0.5dp" />
+                        android:layout_marginStart="0.5dp"
+                        android:layout_weight="1" />
                 </TableRow>
 
                 <TableRow
@@ -101,8 +101,8 @@
                         android:layout_width="0dp"
                         android:layout_height="100dp"
                         android:layout_marginLeft="0.5dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="0.5dp" />
+                        android:layout_marginStart="0.5dp"
+                        android:layout_weight="1" />
 
                     <include
                         android:id="@+id/layout_tabItem6"

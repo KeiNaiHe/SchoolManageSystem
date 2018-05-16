@@ -8,6 +8,10 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.jaeger.ninegridimageview.ItemImageClickListener;
+import com.jaeger.ninegridimageview.NineGridImageView;
+import com.jaeger.ninegridimageview.NineGridImageViewAdapter;
+
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
@@ -15,12 +19,11 @@ import java.util.List;
 
 import huohuo.cn.hncc.guidepage.R;
 import huohuo.cn.hncc.schoolmanagesystem.GlideImageUtil;
-import ninegridimageview.ItemImageClickListener;
-import ninegridimageview.NineGridImageView;
-import ninegridimageview.NineGridImageViewAdapter;
+
 
 /**
  * Created by Windows on 2018/5/9.
+ *
  */
 
 public class XListViewAdapter extends BaseAdapter {

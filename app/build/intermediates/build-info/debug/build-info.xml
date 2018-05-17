@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
-    api-level="27"
+    abi="x86,armeabi-v7a,armeabi"
+    api-level="22"
     build-mode="COLD"
-    density="420dpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.2"
-    timestamp="1526467691676"
+    timestamp="1526573457178"
     token="1623589472739558654"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="37" />
+        duration="412" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="58" />
     <task
         name="verifier"
-        duration="0" />
+        duration="18" />
+
+    <artifact
+        location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        ir-eligibility="CLASS_ADDED"
-        timestamp="1526467644406"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
-            type="SPLIT" />
+        timestamp="1526572918496"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
@@ -41,10 +44,13 @@
             location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -62,15 +68,29 @@
             location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-            type="SPLIT" />
+            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1526573360307"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1526467691676"
-        verifier="COLD_SWAP_REQUESTED" />
+        ir-eligibility="COMPATIBLE"
+        timestamp="1526573457178"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\Android\AndroidProject\SchoolManageSystem\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>

@@ -38,4 +38,5 @@ dependencies {
     implementation 'com.android.support:support-v4:27.1.1'
     implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
     implementation 'com.haibin:calendarview:3.3.0'
+    implementation files('libs/MPAndroidChart3.0.3.jar')
 }

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\66ea678fe0527e3f576e5d0b913a0f9e\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\89a1abef707563f420ad48787337af91\AndroidManifest.xml:17:1-22:12
@@ -33,20 +33,20 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Windows\.gradle\cach
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\cedeeea2145886202de0381bca3f7478\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\8120b41675bb33792b37a4f91b62f3bb\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\e0ec675be520ebc115633954a1b12077\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
-INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-41:12
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:2:11-69
@@ -59,7 +59,7 @@ ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidMani
 	android:name
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:10:5-39:19
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:10:5-41:19
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\66ea678fe0527e3f576e5d0b913a0f9e\AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.2.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\circleimageview-2.2.0.aar\66ea678fe0527e3f576e5d0b913a0f9e\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Windows\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\16d776bd6b9e1a8afaa989a4496eeed3\AndroidManifest.xml:9:5-20
@@ -103,49 +103,53 @@ ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidMani
 	android:name
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:24:27-74
 activity#huohuo.cn.hncc.schoolmanagesystem.MainActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:27:9-83
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:27:9-28:20
 	android:name
 		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:27:19-80
 activity#huohuo.cn.hncc.loginpage.LoginActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:28:9-75
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:29:9-75
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:28:19-72
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:29:19-72
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.CADDrafterActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:29:9-107
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:30:9-107
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:29:19-104
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:30:19-104
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.CheckAllActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:30:9-105
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:31:9-105
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:30:19-102
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:31:19-102
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.MyTernsActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:31:9-104
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:32:9-104
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:31:19-101
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:32:19-101
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.WeeklyReportActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:32:9-109
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:33:9-109
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:32:19-106
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:33:19-106
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.CheckTheNotifiActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:33:9-111
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:34:9-111
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:33:19-108
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:34:19-108
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.SignInActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:34:9-103
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:35:9-103
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:34:19-100
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:35:19-100
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.SignIn_CalendarActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:35:9-111
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:9-111
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:35:19-109
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:19-109
 activity#huohuo.cn.hncc.schoolmanagesystem.homepage.colorful.ColorfulActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:9-104
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:37:9-104
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:36:19-102
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:37:19-102
 activity#huohuo.cn.hncc.schoolmanagesystem.StudentInfoActivity
-ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:37:9-89
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:38:9-89
 	android:name
-		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:37:19-87
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:38:19-87
+activity#huohuo.cn.hncc.schoolmanagesystem.homepage.activity.PostInfoActivity
+ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:39:9-104
+	android:name
+		ADDED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml:39:19-102
 uses-sdk
 INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Android\AndroidProject\SchoolManageSystem\app\src\main\AndroidManifest.xml

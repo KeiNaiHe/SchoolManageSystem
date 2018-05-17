@@ -177,7 +177,6 @@ public class HomeFragment extends Fragment implements BGABanner.Delegate<ImageVi
                 });
                 break;
             case 3://实习岗位
-
                 view.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {

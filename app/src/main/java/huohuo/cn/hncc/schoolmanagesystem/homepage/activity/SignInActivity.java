@@ -50,13 +50,12 @@ public class SignInActivity extends Activity {
         mList_child = new ArrayList<>();
 
 
-        mList_super.add("已签到：2");
-        mList_super.add("未签到：1");
+        mList_super.add("已签到：15");
+        mList_super.add("未签到：12");
 
 
         List<SignInI_ChildtemBean> list = new ArrayList<>();
         SignInI_ChildtemBean bean = new SignInI_ChildtemBean();
-
         bean.setClassAndGrade("计算机应用一班");
         bean.setName("刘田田");
         bean.setStuNo("2016016897");
@@ -68,7 +67,91 @@ public class SignInActivity extends Activity {
         bean.setStuNo("2016016457");
         bean.setStuPhoto("潇潇");
         list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
+
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
+
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
+
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
         mList_child.add(list);
+
+
 
         list = new ArrayList<>();
         bean = new SignInI_ChildtemBean();
@@ -77,6 +160,80 @@ public class SignInActivity extends Activity {
         bean.setStuNo("2016016782");
         bean.setStuPhoto("亚可");
         list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
+
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
+
+
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
+
+
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setStuPhoto("亚可");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setStuPhoto("田田");
+        list.add(bean);
+        bean = new SignInI_ChildtemBean();
+        bean.setClassAndGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setStuPhoto("潇潇");
+        list.add(bean);
+
+
+
         mList_child.add(list);
     }
 

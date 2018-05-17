@@ -2,35 +2,189 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp">
+    android:background="#aaaaaa"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_cadDrafterItem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="2018-05-10 22:22" />
+
 
     <RelativeLayout
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_caddrafteritem_layout"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <!--头像名字学校-->
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_cadDrafterItem_headPortrait"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/me_group_icon" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/civ_cadDrafterItem_headPortrait"
+                android:layout_alignTop="@id/civ_cadDrafterItem_headPortrait"
+                android:layout_toEndOf="@id/civ_cadDrafterItem_headPortrait"
+                android:layout_toRightOf="@id/civ_cadDrafterItem_headPortrait"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_cadDrafterItem_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:text="蒋俊杰"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_cadDrafterItem_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="河南交通职业技术学院" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="实习岗位"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_cadDrafterItem_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="数控程序编制类岗位" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_post"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="实习企业"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_cadDrafterItem_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="掌阅科技股份有限公司" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_startAndEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_company"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="起止时间"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_cadDrafterItem_startAndEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="1931-01-01至2017-12-24" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_startAndEnd"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="实习地址"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/tv_cadDrafterItem_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:text="上海" />
+
+
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/iv_cadDrafterItem_headPortrait"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
-            android:id="@+id/tv_cadDrafterItem_name"
+            android:id="@+id/iv_cadDrafterItem_check"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/iv_cadDrafterItem_headPortrait"
-            android:text="test" />
-
-        <TextView
-            android:id="@+id/tv_cadDrafterItem_school"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/iv_cadDrafterItem_headPortrait"
-            android:layout_toRightOf="@id/iv_cadDrafterItem_headPortrait"
-            android:layout_below="@id/tv_cadDrafterItem_name"
-            android:text="test" />
-
+            android:layout_alignBottom="@id/ll_address"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/post_approve_icon" />
     </RelativeLayout>
+
 
 </LinearLayout>

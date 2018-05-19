@@ -1,10 +1,10 @@
 package huohuo.cn.hncc.schoolmanagesystem;
 
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -12,8 +12,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-
 import huohuo.cn.hncc.guidepage.R;
+import huohuo.cn.hncc.schoolmanagesystem.dynamicpage.DynamicMainFragment;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.HomeFragment;
 import huohuo.cn.hncc.schoolmanagesystem.messagepage.MessageFragment;
 import huohuo.cn.hncc.schoolmanagesystem.mypage.MyFragment;
@@ -27,10 +27,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ImageButton mIv_message;
     private ImageButton mIv_me;
     private FrameLayout mFl_main;
-    private MainFragmentBean mFragmentBean;
+    private FragmentBean mFragmentBean;
     private MessageFragment mMessFragment;
     private MyFragment mMyFragment;
-    private DynamicFragment mDynaragment;
+    private DynamicMainFragment mDynaragment;
     private HomeFragment mHomeFragment;
     private LinearLayout mLl_home;
     private LinearLayout mLl_dynamic;
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         transportImageClick(image);
 
         if (mFragmentBean == null) {
-            mFragmentBean = new MainFragmentBean();
+            mFragmentBean = new FragmentBean();
         }
 
         if (image == mIv_home) {
@@ -125,28 +125,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 ////                trans.add(R.id.fl_main_content, mHomeFragment);
 //            }
 //            trans.show(mHomeFragment);
-            trans.replace(R.id.fl_main_content,  new HomeFragment());
+            trans.replace(R.id.fl_main_content, new HomeFragment());
         } else if (image == mIv_dynamic) {
 
-            if ((mDynaragment = mFragmentBean.getDynamicFragment()) == null) {
+            if ( mFragmentBean.dynamicFragment == null) {
                 //这个if只执行一次
-                mDynaragment = new DynamicFragment();
-                mFragmentBean.setDynamicFragment(mDynaragment);
-                trans.add(R.id.fl_main_content, mDynaragment);
+                mFragmentBean.dynamicFragment = new DynamicMainFragment();
             }
-            trans.show(mDynaragment);
+            trans.replace(R.id.fl_main_content,mFragmentBean.dynamicFragment);
 
         } else if (image == mIv_message) {
-            if ((mMessFragment = mFragmentBean.getMessFragment()) == null) {
+            if ((mMessFragment = mFragmentBean.messFragment) == null) {
                 mMessFragment = new MessageFragment();
-                mFragmentBean.setMessFragment(mMessFragment);
+                mFragmentBean.messFragment = mMessFragment;
                 trans.add(R.id.fl_main_content, mMessFragment);
             }
             trans.show(mMessFragment);
         } else {
-            if ((mMyFragment = mFragmentBean.getMyFragment()) == null) {
+            if ((mMyFragment = mFragmentBean.myFragment) == null) {
                 mMyFragment = new MyFragment();
-                mFragmentBean.setMyFragment(mMyFragment);
+                mFragmentBean.myFragment = mMyFragment;
                 trans.add(R.id.fl_main_content, mMyFragment);
             }
             trans.show(mMyFragment);
@@ -174,7 +172,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public FragmentTransaction getFragmentTrans() {
-        FragmentManager manager = getFragmentManager();
-        return manager.beginTransaction();
+        FragmentManager supportManager = getSupportFragmentManager();
+        return supportManager.beginTransaction();
+    }
+
+     class FragmentBean {
+        private HomeFragment homeFragment;
+        private MessageFragment messFragment;
+        private DynamicMainFragment dynamicFragment;
+        private MyFragment myFragment;
     }
 }

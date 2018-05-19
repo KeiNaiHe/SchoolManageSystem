@@ -1,7 +1,6 @@
 package huohuo.cn.hncc.schoolmanagesystem.homepage;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Windows on 2018/5/9.
@@ -13,7 +12,7 @@ public class XListViewBean {
     private String time;
     private String signature;
     private String content;
-    private List<Object> listSrc;
+    private ArrayList<String> listSrc;
 
     public Object getHeadPortrait() {
         return headPortrait;
@@ -55,11 +54,11 @@ public class XListViewBean {
         this.content = content;
     }
 
-    public List<Object> getListSrc() {
+    public ArrayList<String> getListSrc() {
         return listSrc;
     }
 
-    public void setListSrc(ArrayList<Object> listSrc) {
+    public void setListSrc(ArrayList<String> listSrc) {
         this.listSrc = listSrc;
     }
 }

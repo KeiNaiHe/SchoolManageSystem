@@ -20,7 +20,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="huohuo.cn.hncc.guidepage.guideActivity" >
             <intent-filter>
@@ -42,6 +41,7 @@
         <activity android:name="huohuo.cn.hncc.schoolmanagesystem.homepage.colorful.ColorfulActivity" />
         <activity android:name="huohuo.cn.hncc.schoolmanagesystem.StudentInfoActivity" />
         <activity android:name="huohuo.cn.hncc.schoolmanagesystem.homepage.activity.PostInfoActivity" />
+        <activity android:name="huohuo.cn.hncc.schoolmanagesystem.homepage.activity.DynamicDetailActivity" />
     </application>
 
 </manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_detailComment_headPortrait"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <LinearLayout
+        android:id="@+id/ll_commentInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/civ_detailComment_headPortrait"
+        android:layout_alignTop="@id/civ_detailComment_headPortrait"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/civ_detailComment_headPortrait"
+        android:layout_toRightOf="@id/civ_detailComment_headPortrait"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_detailComment_commentName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="评论人的名字"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_detailComment_commentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="时间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ll_commentInfo"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/ll_commentInfo"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点赞评论功能区" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_detailComment_commentText"
+        android:layout_width="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/ll_commentInfo"
+        android:layout_alignStart="@id/ll_commentInfo"
+        android:layout_below="@id/ll_commentInfo"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_detailComment_commentText"
+        android:layout_alignStart="@id/tv_detailComment_commentText"
+        android:layout_below="@id/tv_detailComment_commentText"
+        android:text="待实现评论图片区" />
+</RelativeLayout>
+

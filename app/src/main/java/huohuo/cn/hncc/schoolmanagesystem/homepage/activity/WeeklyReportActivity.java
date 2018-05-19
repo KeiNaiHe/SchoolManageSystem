@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -77,7 +78,7 @@ public class WeeklyReportActivity extends Activity {
         bean.setContent("看到那个人给我点的赞，我确实不敢动，怕把她吓跑了");
         bean.setTime("2017/7/10 下午5:45");
         bean.setSignature("不是我太帅，而是你们太丑");
-        ArrayList<Object> list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         list.add("http://www.5wants.cc/WEB/File/U3325P704T93D1661F3923DT20090612155225.jpg");
         list.add("http://p1.qzone.la/upload/20150102/a3zs6l69.jpg");
         list.add("http://www.5wants.cc/WEB/File/U3325P704T93D1661F3923DT20090612155225.jpg");
@@ -115,7 +116,6 @@ public class WeeklyReportActivity extends Activity {
         mXListViewAdapter = new XListViewAdapter(WeeklyReportActivity.this,
                 R.layout.item_weeklyreport_xlistview,
                 WeeklyReportActivity.this);
-
         mXListViewAdapter.setOnHeadPortraitClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,16 +130,37 @@ public class WeeklyReportActivity extends Activity {
             }
 
         });
-
         mXListViewAdapter.setOnNineGridImageItemClickListener(new ItemImageClickListener() {
             @Override
             public void onItemImageClick(Context context, ImageView imageView, int index, List list) {
-                Toast.makeText(context, "这是第"+index+1+"张图", Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, "这是第" + index + 1 + "张图", Toast.LENGTH_SHORT).show();
             }
         });
-
         mXListViewAdapter.setXListViewData(mList_ListData);
         mListView.setAdapter(mXListViewAdapter);
+        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                XListViewBean bean = mList_ListData.get(position);
+
+                Intent intent = new Intent(WeeklyReportActivity.this, DynamicDetailActivity.class);
+
+                /** 头像            String   HeadPortrait
+                 * 时间            String  ShowTime
+                 * 个性签名         String  Signature
+                 * 内容            String   ShowContent
+                 * nineImageView  List<String>  NineGridImageViewData
+                 * */
+                Bundle bundle = new Bundle();
+                bundle.putString("HeadPortrait", String.valueOf(bean.getHeadPortrait()));
+                bundle.putString("ShowTime", bean.getTime());
+                bundle.putString("Signature", bean.getSignature());
+                bundle.putString("ShowContent", bean.getContent());
+                bundle.putStringArrayList("NineGridImageViewData", bean.getListSrc());
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
 
         //SmartRefreshLayout设置刷新和加载更多监听
         mSamrtRefreshLayout.setOnRefreshLoadMoreListener(new OnRefreshLoadMoreListener() {
@@ -151,7 +172,7 @@ public class WeeklyReportActivity extends Activity {
                 bean.setContent("活出自己的样子");
                 bean.setTime(new SimpleDateFormat().format(new Date()));
                 bean.setSignature("他活成了诗，却丢了自己的样子");
-                ArrayList<Object> list = new ArrayList<>();
+                ArrayList<String> list = new ArrayList<>();
                 list.add("http://p1.qzone.la/upload/20150222/5xpgue83.png");
                 list.add("https://www.feizl.com/upload2007/allimg/170828/14001a328-1.jpg");
                 list.add("http://www.5wants.cc/WEB/File/U3325P704T93D1661F3923DT20090612155225.jpg");
@@ -171,7 +192,7 @@ public class WeeklyReportActivity extends Activity {
                 bean.setContent("          Hello,好久未见，还是喜欢你");
                 bean.setTime(new SimpleDateFormat().format(new Date()));
                 bean.setSignature("学会享受这个世界，而不是去理解");
-                ArrayList<Object> list = new ArrayList<>();
+                ArrayList<String> list = new ArrayList<>();
                 list.add("http://p1.qzone.la/upload/9/zz3qidar.jpg");
                 list.add("https://img5.duitang.com/uploads/item/201507/23/20150723201510_EXWBR.thumb.700_0.jpeg");
                 list.add("https://img5.duitang.com/uploads/item/201610/18/20161018000643_YNmhT.jpeg");

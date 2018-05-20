@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun May 20 11:29:32 CST 2018
+#Sun May 20 19:53:40 CST 2018
 2.base=D\:\\Android\\AndroidProject\\SchoolManageSystem\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 5.set=NATIVE_RESOURCE
 0.path=lib/x86/libimagepipeline.so

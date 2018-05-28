@@ -1,6 +1,7 @@
 package huohuo.cn.hncc.schoolmanagesystem;
 
 
+import android.annotation.SuppressLint;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -27,7 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ImageButton mIv_message;
     private ImageButton mIv_me;
     private FrameLayout mFl_main;
-    private FragmentBean mFragmentBean;
     private MessageFragment mMessFragment;
     private MyFragment mMyFragment;
     private DynamicMainFragment mDynaragment;
@@ -62,7 +62,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     private void defaultFragment() {
         FragmentTransaction trans = getFragmentTrans();
-        loadFragment(trans, mIv_home);
+        if (mHomeFragment == null) {
+            mHomeFragment = new HomeFragment();
+        }
+        trans.replace(R.id.fl_main_content, mHomeFragment);
+        transportImageClick(mIv_home);
+        trans.commit();
     }
 
 
@@ -87,70 +92,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()) {
             case R.id.ll_main_dynamic://动态
-
-                loadFragment(trans, mIv_dynamic);
+                if (mDynaragment == null) {
+                    mDynaragment = new DynamicMainFragment();
+                }
+                trans.replace(R.id.fl_main_content, mDynaragment);
+                transportImageClick(mIv_dynamic);
                 break;
             case R.id.ll_main_home://首页
-
-                loadFragment(trans, mIv_home);
+                if (mHomeFragment == null) {
+                    mHomeFragment = new HomeFragment();
+                }
+                trans.replace(R.id.fl_main_content, mHomeFragment);
+                transportImageClick(mIv_home);
                 break;
             case R.id.ll_main_me://我的
-
-                loadFragment(trans, mIv_me);
+                if (mMyFragment == null) {
+                    mMyFragment = new MyFragment();
+                }
+                trans.replace(R.id.fl_main_content, mMyFragment);
+                transportImageClick(mIv_me);
                 break;
             case R.id.ll_main_message://messsage
-
-                loadFragment(trans, mIv_message);
+                if (mMessFragment == null) {
+                    mMessFragment = new MessageFragment();
+                }
+                trans.replace(R.id.fl_main_content, mMessFragment);
+                transportImageClick(mIv_message);
                 break;
             default:
         }
-    }
-
-    /**
-     * Fragment在这个方法里面切换
-     */
-    private void loadFragment(FragmentTransaction trans, ImageView image) {
-        transportImageClick(image);
-
-        if (mFragmentBean == null) {
-            mFragmentBean = new FragmentBean();
-        }
-
-        if (image == mIv_home) {
-
-//            if ((mHomeFragment = mFragmentBean.getHomeFragment()) == null) {
-//                mHomeFragment = new HomeFragment();
-////                //设置携带参数
-//                mFragmentBean.setHomeFragment(mHomeFragment);
-////                trans.add(R.id.fl_main_content, mHomeFragment);
-//            }
-//            trans.show(mHomeFragment);
-            trans.replace(R.id.fl_main_content, new HomeFragment());
-        } else if (image == mIv_dynamic) {
-
-            if ( mFragmentBean.dynamicFragment == null) {
-                //这个if只执行一次
-                mFragmentBean.dynamicFragment = new DynamicMainFragment();
-            }
-            trans.replace(R.id.fl_main_content,mFragmentBean.dynamicFragment);
-
-        } else if (image == mIv_message) {
-            if ((mMessFragment = mFragmentBean.messFragment) == null) {
-                mMessFragment = new MessageFragment();
-                mFragmentBean.messFragment = mMessFragment;
-                trans.add(R.id.fl_main_content, mMessFragment);
-            }
-            trans.show(mMessFragment);
-        } else {
-            if ((mMyFragment = mFragmentBean.myFragment) == null) {
-                mMyFragment = new MyFragment();
-                mFragmentBean.myFragment = mMyFragment;
-                trans.add(R.id.fl_main_content, mMyFragment);
-            }
-            trans.show(mMyFragment);
-        }
         trans.commit();
     }
+
 
     /**
      * 点击底部图片切换
@@ -171,15 +144,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    @SuppressLint("CommitTransaction")
     public FragmentTransaction getFragmentTrans() {
         FragmentManager supportManager = getSupportFragmentManager();
         return supportManager.beginTransaction();
     }
 
-     class FragmentBean {
-        private HomeFragment homeFragment;
-        private MessageFragment messFragment;
-        private DynamicMainFragment dynamicFragment;
-        private MyFragment myFragment;
-    }
+
+
 }

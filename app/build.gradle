@@ -40,4 +40,5 @@ dependencies {
     implementation 'com.haibin:calendarview:3.3.0'
     implementation files('libs/MPAndroidChart3.0.3.jar')
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    implementation 'com.miguelcatalan:materialsearchview:1.4.0'
 }

@@ -3,130 +3,134 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBg"
     tools:context="huohuo.cn.hncc.schoolmanagesystem.MainActivity">
 
-    <FrameLayout
-        android:id="@+id/fl_main_content"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_above="@id/ll_main_tabBottom"
-        android:background="#44000000" />
-
-
     <LinearLayout
-        android:id="@+id/ll_main_tabBottom"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/ll_main_home"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/iv_main_home"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:gravity="center"
-                android:src="@mipmap/tab_home_normal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="首页" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/ll_main_dynamic"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/iv_main_dynamic"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:gravity="center"
-                android:src="@mipmap/tab_dynamic_normal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="动态" />
-
-        </LinearLayout>
-
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+        <FrameLayout
+            android:id="@+id/fl_main_content"
+            android:layout_width="match_parent"
+            android:background="@color/colorWhite"
+            android:layout_height="0dp"
             android:layout_weight="1" />
 
-        <LinearLayout
-            android:id="@+id/ll_main_message"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:id="@+id/iv_main_message"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"
-                android:gravity="center"
-                android:src="@mipmap/tab_message_normal" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="信息" />
-        </LinearLayout>
-
 
         <LinearLayout
-            android:id="@+id/ll_main_me"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:id="@+id/ll_main_tabBottom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/iv_main_me"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@null"
+            <LinearLayout
+                android:id="@+id/ll_main_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:gravity="center"
-                android:src="@mipmap/tab_me_normal" />
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="我的" />
+                <ImageButton
+                    android:id="@+id/iv_main_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@mipmap/tab_home_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="首页" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_main_dynamic"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/iv_main_dynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@mipmap/tab_dynamic_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="动态" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:id="@+id/ll_main_message"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/iv_main_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@mipmap/tab_message_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="信息" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_main_me"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/iv_main_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:src="@mipmap/tab_me_normal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="我的" />
+            </LinearLayout>
+
+
         </LinearLayout>
-
-
     </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/ll_main_publish"

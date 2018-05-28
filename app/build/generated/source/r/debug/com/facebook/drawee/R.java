@@ -34,22 +34,22 @@ public final class R {
         public static final int roundingBorderColor = 0x7f04017c;
         public static final int roundingBorderPadding = 0x7f04017d;
         public static final int roundingBorderWidth = 0x7f04017e;
-        public static final int viewAspectRatio = 0x7f04021f;
+        public static final int viewAspectRatio = 0x7f040225;
     }
     public static final class id {
-        public static final int center = 0x7f090039;
-        public static final int centerCrop = 0x7f09003a;
-        public static final int centerInside = 0x7f09003b;
-        public static final int fitBottomStart = 0x7f09006f;
-        public static final int fitCenter = 0x7f090070;
-        public static final int fitEnd = 0x7f090071;
-        public static final int fitStart = 0x7f090072;
-        public static final int fitXY = 0x7f090073;
-        public static final int focusCrop = 0x7f090078;
-        public static final int none = 0x7f0900dd;
+        public static final int center = 0x7f09003d;
+        public static final int centerCrop = 0x7f09003e;
+        public static final int centerInside = 0x7f09003f;
+        public static final int fitBottomStart = 0x7f090077;
+        public static final int fitCenter = 0x7f090078;
+        public static final int fitEnd = 0x7f090079;
+        public static final int fitStart = 0x7f09007a;
+        public static final int fitXY = 0x7f09007b;
+        public static final int focusCrop = 0x7f090080;
+        public static final int none = 0x7f0900f2;
     }
     public static final class styleable {
-        public static final int[] GenericDraweeHierarchy = { 0x7f040023, 0x7f040035, 0x7f0400b9, 0x7f0400ba, 0x7f0400bb, 0x7f040151, 0x7f04015e, 0x7f04015f, 0x7f040164, 0x7f040166, 0x7f040167, 0x7f040168, 0x7f040171, 0x7f040172, 0x7f040175, 0x7f040176, 0x7f040177, 0x7f040178, 0x7f040179, 0x7f04017a, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f04021f };
+        public static final int[] GenericDraweeHierarchy = { 0x7f040023, 0x7f040035, 0x7f0400b9, 0x7f0400ba, 0x7f0400bb, 0x7f040151, 0x7f04015e, 0x7f04015f, 0x7f040164, 0x7f040166, 0x7f040167, 0x7f040168, 0x7f040171, 0x7f040172, 0x7f040175, 0x7f040176, 0x7f040177, 0x7f040178, 0x7f040179, 0x7f04017a, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f040225 };
         public static final int GenericDraweeHierarchy_actualImageScaleType = 0;
         public static final int GenericDraweeHierarchy_backgroundImage = 1;
         public static final int GenericDraweeHierarchy_fadeDuration = 2;
@@ -75,7 +75,7 @@ public final class R {
         public static final int GenericDraweeHierarchy_roundingBorderPadding = 22;
         public static final int GenericDraweeHierarchy_roundingBorderWidth = 23;
         public static final int GenericDraweeHierarchy_viewAspectRatio = 24;
-        public static final int[] SimpleDraweeView = { 0x7f040022, 0x7f040023, 0x7f040024, 0x7f040035, 0x7f0400b9, 0x7f0400ba, 0x7f0400bb, 0x7f040151, 0x7f04015e, 0x7f04015f, 0x7f040164, 0x7f040166, 0x7f040167, 0x7f040168, 0x7f040171, 0x7f040172, 0x7f040175, 0x7f040176, 0x7f040177, 0x7f040178, 0x7f040179, 0x7f04017a, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f04021f };
+        public static final int[] SimpleDraweeView = { 0x7f040022, 0x7f040023, 0x7f040024, 0x7f040035, 0x7f0400b9, 0x7f0400ba, 0x7f0400bb, 0x7f040151, 0x7f04015e, 0x7f04015f, 0x7f040164, 0x7f040166, 0x7f040167, 0x7f040168, 0x7f040171, 0x7f040172, 0x7f040175, 0x7f040176, 0x7f040177, 0x7f040178, 0x7f040179, 0x7f04017a, 0x7f04017b, 0x7f04017c, 0x7f04017d, 0x7f04017e, 0x7f040225 };
         public static final int SimpleDraweeView_actualImageResource = 0;
         public static final int SimpleDraweeView_actualImageScaleType = 1;
         public static final int SimpleDraweeView_actualImageUri = 2;

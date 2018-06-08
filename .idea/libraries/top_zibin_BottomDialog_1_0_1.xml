@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="top.zibin:BottomDialog-1.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/BottomDialog-1.0.1.aar/d6e6214e82c233bf0f1570fe5459dea1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/BottomDialog-1.0.1.aar/d6e6214e82c233bf0f1570fe5459dea1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/top.zibin/BottomDialog/1.0.1/e0a9d8625d45cc17f99399d0cb2d642698f03c77/BottomDialog-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryBg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageButton
+            android:id="@+id/ib_evaluation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/actionbar_dark_back_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="老师考评"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorBlack" />
+
+    <LinearLayout
+        android:id="@+id/ll_evaluation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorYellow"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_evaluation_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="考评良好"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/tv_evaluation_evaluation"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            android:text="81"
+            android:textSize="70sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_evaluation_school"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/press_layout_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tv_evaluation_school"
+            android:gravity="center"
+            android:text="校"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="校内考评"
+            android:textColor="@color/colorBlack" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_evaluation_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无考评"
+            android:textColor="@color/colorBlack" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/icon_black_right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_evaluation_enterprise"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/press_layout_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tv_evaluation_enterprise"
+            android:gravity="center"
+            android:text="企"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="企业考评"
+            android:textColor="@color/colorBlack" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_evaluation_enterprise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂无考评"
+            android:textColor="@color/colorBlack" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/icon_black_right" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

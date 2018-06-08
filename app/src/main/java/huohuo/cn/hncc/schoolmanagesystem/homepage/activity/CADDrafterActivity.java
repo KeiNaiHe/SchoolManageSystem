@@ -54,7 +54,7 @@ public class CADDrafterActivity extends AppCompatActivity {
         mTv_info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CADDrafterActivity.this,PostInfoActivity.class));
+                startActivity(new Intent(CADDrafterActivity.this, PostInfoActivity.class));
             }
         });
 
@@ -76,6 +76,7 @@ public class CADDrafterActivity extends AppCompatActivity {
         itemBean.company = "掌阅科技股份有限公司";
         itemBean.address = "上海";
         itemBean.check = -1;
+        itemBean.post = "软件编程";
         mList_data.add(itemBean);
 
         itemBean = new ItemBean();
@@ -85,6 +86,7 @@ public class CADDrafterActivity extends AppCompatActivity {
         itemBean.time = "2018-09-26 10:22";
         itemBean.startAndEndTime = "2017-08-25 至 2018—09-26";
         itemBean.company = "掌淘科技";
+        itemBean.post = "java开发工程师";
         itemBean.address = "上海浦东";
         itemBean.check = 1;
         mList_data.add(itemBean);
@@ -97,6 +99,7 @@ public class CADDrafterActivity extends AppCompatActivity {
         itemBean.startAndEndTime = "2017-08-25 至 2018—06-10";
         itemBean.company = "上海设计公司";
         itemBean.address = "上海浦东";
+        itemBean.post = "android开发工程师";
         itemBean.check = 0;
         mList_data.add(itemBean);
 
@@ -147,7 +150,7 @@ public class CADDrafterActivity extends AppCompatActivity {
                 iv_check.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.post_unapprove_icon));
             } else if (itemBean.check == 1) {
                 iv_check.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.post_approve_icon));
-            }else{
+            } else {
                 iv_check.setImageBitmap(null);
             }
 

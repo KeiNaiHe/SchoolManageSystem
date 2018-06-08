@@ -28,9 +28,9 @@ import java.util.List;
 
 import huohuo.cn.hncc.guidepage.R;
 import huohuo.cn.hncc.schoolmanagesystem.GlideImageUtil;
-import huohuo.cn.hncc.schoolmanagesystem.StudentInfoActivity;
+import huohuo.cn.hncc.schoolmanagesystem.homepage.StudentInfoActivity;
+import huohuo.cn.hncc.schoolmanagesystem.homepage.WeeklyReportBean;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.XListViewAdapter;
-import huohuo.cn.hncc.schoolmanagesystem.homepage.XListViewBean;
 
 
 /**
@@ -41,7 +41,7 @@ public class WeeklyReportActivity extends Activity {
 
     private ListView mListView;
     private ImageButton mIb_back;
-    private List<XListViewBean> mList_ListData;
+    private List<WeeklyReportBean> mList_ListData;
     private XListViewAdapter mXListViewAdapter;
     private ClassicsHeader mClassicHeader;
     private ClassicsFooter mClassicsFooter;
@@ -71,8 +71,7 @@ public class WeeklyReportActivity extends Activity {
         mList_ListData = new ArrayList<>();
 
         //图片类型全部为URL
-
-        XListViewBean bean = new XListViewBean();
+        WeeklyReportBean bean = new WeeklyReportBean();
         bean.setHeadPortrait("http://imgsrc.baidu.com/forum/w=580/sign=1588b7c5d739b6004dce0fbfd9503526/7bec54e736d12f2eb97e1a464dc2d56285356898.jpg");
         bean.setName("祝皮皮");
         bean.setContent("看到那个人给我点的赞，我确实不敢动，怕把她吓跑了");
@@ -88,7 +87,7 @@ public class WeeklyReportActivity extends Activity {
         bean.setListSrc(list);
         mList_ListData.add(bean);
 
-        bean = new XListViewBean();
+        bean = new WeeklyReportBean();
         bean.setHeadPortrait("http://imgtu.5011.net/uploads/content/20170209/4934501486627131.jpg");
         bean.setName("范继科");
         bean.setContent("哎，那个姑娘，我中意你");
@@ -141,7 +140,7 @@ public class WeeklyReportActivity extends Activity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                XListViewBean bean = mList_ListData.get(position);
+                WeeklyReportBean bean = mList_ListData.get(position);
 
                 Intent intent = new Intent(WeeklyReportActivity.this, DynamicDetailActivity.class);
 
@@ -166,7 +165,7 @@ public class WeeklyReportActivity extends Activity {
         mSamrtRefreshLayout.setOnRefreshLoadMoreListener(new OnRefreshLoadMoreListener() {
             @Override
             public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
-                XListViewBean bean = new XListViewBean();
+                WeeklyReportBean bean = new WeeklyReportBean();
                 bean.setHeadPortrait("http://p1.qzone.la/upload/3/c2btmgha.jpg");
                 bean.setName("张水军");
                 bean.setContent("活出自己的样子");
@@ -186,7 +185,7 @@ public class WeeklyReportActivity extends Activity {
 
             @Override
             public void onRefresh(@NonNull RefreshLayout refreshLayout) {
-                XListViewBean bean = new XListViewBean();
+                WeeklyReportBean bean = new WeeklyReportBean();
                 bean.setHeadPortrait("http://imgtu.5011.net/uploads/content/20170209/4934501486627131.jpg");
                 bean.setName("范继科");
                 bean.setContent("          Hello,好久未见，还是喜欢你");

@@ -12,14 +12,11 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_postInfoItem_stuPhoto"
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_postInfoItem_headPortrait"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="10dp"
-            android:background="@drawable/bg_signin_tv_round"
-            android:gravity="center"
-            android:text="周雅静"
             android:textColor="@color/colorWhite"
             android:textSize="20sp" />
 

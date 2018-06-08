@@ -6,6 +6,7 @@ package huohuo.cn.hncc.schoolmanagesystem.homepage.activity;
  * 1.PieChart不能随ExpandableListView一起滚动，后期修改
  */
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -32,9 +33,14 @@ import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
 import huohuo.cn.hncc.guidepage.R;
+import huohuo.cn.hncc.schoolmanagesystem.GlideImageUtil;
+import huohuo.cn.hncc.schoolmanagesystem.homepage.StudentInfoActivity;
+import huohuo.cn.hncc.schoolmanagesystem.homepage.TernShipInfo;
 
 public class PostInfoActivity extends AppCompatActivity {
 
@@ -45,7 +51,7 @@ public class PostInfoActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private ImageButton mIb_back;
     private ExpandableListView mExpandavleList;
-    private List<List<ChildItemBean>> mList_childItem;
+    private List<List<TernShipInfo>> mList_childItem;
     private List<String> mList_superItem;
     private ItemAdapter mItemAdapter;
 
@@ -106,11 +112,11 @@ public class PostInfoActivity extends AppCompatActivity {
         legend.setForm(Legend.LegendForm.CIRCLE);
         legend.setEnabled(true);
 
-          mPieChart.animateX(1800);
+        mPieChart.animateX(1800);
 //        //设置y轴动画
         // mPieChart.animateY(1800);
 //        //设置xy轴一起的动画
-      //  mPieChart.animateXY(1800, 1800);
+        //  mPieChart.animateXY(1800, 1800);
         setChartData();
 
 
@@ -119,6 +125,17 @@ public class PostInfoActivity extends AppCompatActivity {
         setExpandData();
         mItemAdapter = new ItemAdapter();
         mExpandavleList.setAdapter(mItemAdapter);
+
+
+        mExpandavleList.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                Intent intent = new Intent(PostInfoActivity.this, StudentInfoActivity.class);
+                intent.putExtra("TernShipInfo", mList_childItem.get(groupPosition).get(childPosition));
+                startActivity(intent);
+                return true;
+            }
+        });
 
     }
 
@@ -132,44 +149,130 @@ public class PostInfoActivity extends AppCompatActivity {
         mList_superItem.add("未填报实习生");
         mList_superItem.add("已填报实习生");
 
-        List<ChildItemBean> list = new ArrayList<>();
-        ChildItemBean bean = new ChildItemBean();
-        bean.classes = ("计算机应用一班");
-        bean.name = ("刘田田");
-        bean.stuNo = ("2016016897");
-        bean.headTV = ("田田");
+        List<TernShipInfo> list;
+        TernShipInfo bean;
+        List<String> imageList;
+
+
+        list = new ArrayList<>();
+        bean = new TernShipInfo();
+        bean.setClassGrade("计算机应用一班");
+        bean.setName("刘田田");
+        bean.setStuNo("2016016897");
+        bean.setDepartment("交通信息工程系");
+        imageList = new ArrayList<String>();
+        imageList.add("https://img5.duitang.com/uploads/item/201511/11/20151111213032_dmvRn.jpeg");
+        bean.setDynamicImage(imageList);
+        bean.setHeadPortrait("https://img5.duitang.com/uploads/item/201407/28/20140728222120_wzXK5.thumb.700_0.jpeg");
+        bean.setNickName("无恙、别来");
+        bean.setSchool("河南交通职业技术学院");
+        bean.setPhone("15489657823");
+        bean.setSex("人生，不只为他人而活，还为自己而活");
+        bean.setAddress("河南省洛阳市");
+        bean.setBirthdayData(new Date(System.currentTimeMillis()));
+        bean.setConstellation("射手座");
         list.add(bean);
-        bean = new ChildItemBean();
-        bean.classes = ("计算机应用一班");
-        bean.name = ("范潇潇");
-        bean.stuNo = ("2016016457");
-        bean.headTV = ("潇潇");
+
+        bean = new TernShipInfo();
+        bean.setClassGrade("计算机应用一班");
+        bean.setName("范潇潇");
+        bean.setStuNo("2016016457");
+        bean.setDepartment("交通信息工程系");
+        imageList = new ArrayList<String>();
+        imageList.add("http://pic29.photophoto.cn/20131027/0005018374163594_b.jpg");
+        imageList.add("http://pic29.photophoto.cn/20131027/0005018353406996_b.jpg");
+        imageList.add("https://img5.duitang.com/uploads/item/201507/11/20150711160029_FVUfc.thumb.700_0.jpeg");
+        bean.setDynamicImage(imageList);
+        bean.setHeadPortrait("http://imgtu.5011.net/uploads/content/20170609/7336091496978485.jpg");
+        bean.setNickName("无恙、别来");
+        bean.setSchool("河南交通职业技术学院");
+        bean.setPhone("15489657823");
+        bean.setSex("1");
+        bean.setSignature("人啊，越成长越孤单");
+        bean.setAddress("河南省洛阳市");
+        bean.setBirthdayData(new Date(System.currentTimeMillis()));
+        bean.setConstellation("射手座");
         list.add(bean);
-        bean = new ChildItemBean();
-        bean.classes = ("数字媒体一班");
-        bean.name = ("范亚可");
-        bean.stuNo = ("2016016782");
-        bean.headTV = ("亚可");
+
+        bean = new TernShipInfo();
+        bean.setClassGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setDepartment("交通信息工程系");
+        bean.setPhone("15489657823");
+        imageList = new ArrayList<String>();
+        imageList.add("https://img5.duitang.com/uploads/item/201407/28/20140728222120_wzXK5.thumb.700_0.jpeg");
+        imageList.add("https://img5.duitang.com/uploads/item/201410/09/20141009232121_Ji2uB.jpeg");
+        imageList.add("http://pic32.photophoto.cn/20140901/0037037560819466_b.jpg");
+        bean.setDynamicImage(imageList);
+        bean.setHeadPortrait("http://up.qqya.com/allimg/201710-t/17-101800_32138.jpg");
+        bean.setNickName("无恙、别来");
+        bean.setSchool("河南交通职业技术学院");
+        bean.setSex("1");
+        bean.setSignature("胖子，胖子，都是胖子");
+        bean.setAddress("河南省洛阳市");
+        bean.setBirthdayData(new Date(System.currentTimeMillis()));
+        bean.setConstellation("射手座");
         list.add(bean);
         mList_childItem.add(list);
 
-        bean = new ChildItemBean();
-        bean.classes = ("计算机应用一班");
-        bean.name = ("刘田田");
-        bean.stuNo = ("2016016897");
-        bean.headTV = ("田田");
+        list = new ArrayList<>();
+        bean = new TernShipInfo();
+        bean.setClassGrade("计算机应用一班");
+        bean.setName("孙亚科");
+        bean.setStuNo("2016016897");
+        bean.setDepartment("交通信息工程系");
+        imageList = new ArrayList<String>();
+        imageList.add("http://pic20.photophoto.cn/20110804/0006019011080395_b.jpg");
+        imageList.add("http://pic29.photophoto.cn/20131119/0044040987321641_b.jpg");
+        bean.setDynamicImage(imageList);
+        bean.setPhone("15489657823");
+        bean.setHeadPortrait("http://img.zcool.cn/community/018210594e6f2ca8012193a389132c.jpg@1280w_1l_2o_100sh.png");
+        bean.setNickName("无恙、别来");
+        bean.setSchool("河南交通职业技术学院");
+        bean.setSex("1");
+        bean.setSignature("success or 平庸");
+        bean.setAddress("河南省洛阳市");
+        bean.setBirthdayData(new Date(System.currentTimeMillis()));
+        bean.setConstellation("射手座");
         list.add(bean);
-        bean = new ChildItemBean();
-        bean.classes = ("计算机应用一班");
-        bean.name = ("范潇潇");
-        bean.stuNo = ("2016016457");
-        bean.headTV = ("潇潇");
+
+        bean = new TernShipInfo();
+        bean.setClassGrade("计算机应用一班");
+        bean.setName("孙逸豪");
+        bean.setStuNo("2016016457");
+        bean.setDepartment("交通信息工程系");
+        imageList = new ArrayList<String>();
+        bean.setPhone("15489657823");
+        bean.setDynamicImage(imageList);
+        bean.setHeadPortrait("https://img4.duitang.com/uploads/item/201510/19/20151019103415_cSWLa.thumb.700_0.jpeg");
+        bean.setNickName("无恙、别来");
+        bean.setSchool("河南交通职业技术学院");
+        bean.setSex("1");
+        bean.setSignature("我都不知道我自己是谁，我是哪个人瞎编的");
+        bean.setAddress("河南省洛阳市");
+        bean.setBirthdayData(new Date(System.currentTimeMillis()));
+        bean.setConstellation("射手座");
         list.add(bean);
-        bean = new ChildItemBean();
-        bean.classes = ("数字媒体一班");
-        bean.name = ("范亚可");
-        bean.stuNo = ("2016016782");
-        bean.headTV = ("亚可");
+
+        bean = new TernShipInfo();
+        bean.setClassGrade("数字媒体一班");
+        bean.setName("范亚可");
+        bean.setStuNo("2016016782");
+        bean.setPhone("15489657823");
+        bean.setDepartment("交通信息工程系");
+        imageList = new ArrayList<String>();
+        imageList.add("http://scimg.158pic.com/allimg/170225/106-1F225104T5K0.jpg");
+        bean.setDynamicImage(imageList);
+        bean.setHeadPortrait("https://cdnq.duitang.com/uploads/item/201505/07/20150507171629_sXZKz.jpeg");
+        bean.setNickName("无恙、别来");
+        bean.setSchool("河南交通职业技术学院");
+        bean.setSex("1");
+        bean.setSignature("我都不知道我自己是谁，我是哪个人瞎编的");
+        bean.setAddress("河南省洛阳市");
+        bean.setBirthdayData(new Date(System.currentTimeMillis()));
+        bean.setConstellation("射手座");
+
         list.add(bean);
         mList_childItem.add(list);
     }
@@ -209,12 +312,6 @@ public class PostInfoActivity extends AppCompatActivity {
         mExpandavleList = (ExpandableListView) findViewById(R.id.ealv_postInfo_con);
     }
 
-    private class ChildItemBean {
-        private String name;
-        private String classes;
-        private String stuNo;
-        private String headTV;
-    }
 
     class ItemAdapter extends BaseExpandableListAdapter {
         @Override
@@ -274,23 +371,23 @@ public class PostInfoActivity extends AppCompatActivity {
             } else {
                 view = convertView;
             }
-            List<ChildItemBean> list = mList_childItem.get(groupPosition);
-            ChildItemBean childItemBean = list.get(childPosition);
+            List<TernShipInfo> list = mList_childItem.get(groupPosition);
+            TernShipInfo childItemBean = list.get(childPosition);
             TextView tv_name = (TextView) view.findViewById(R.id.tv_postInfoItem_name);
-            TextView tv_headPhoto = (TextView) view.findViewById(R.id.tv_postInfoItem_stuPhoto);
+            CircleImageView civ_headPhoto = (CircleImageView) view.findViewById(R.id.civ_postInfoItem_headPortrait);
             TextView tv_stuNo = (TextView) view.findViewById(R.id.tv_postInfoItem_stuNo);
             TextView tv_class = (TextView) view.findViewById(R.id.tv_postInfoItem_class);
 
-            tv_class.setText(childItemBean.classes);
-            tv_headPhoto.setText(childItemBean.headTV);
-            tv_stuNo.setText(childItemBean.stuNo);
-            tv_name.setText(childItemBean.name);
+            tv_class.setText(childItemBean.getClassGrade());
+            GlideImageUtil.loadIntenetImg(childItemBean.getHeadPortrait(), civ_headPhoto);
+            tv_stuNo.setText(childItemBean.getStuNo());
+            tv_name.setText(childItemBean.getName());
             return view;
         }
 
         @Override
         public boolean isChildSelectable(int groupPosition, int childPosition) {
-            return false;
+            return true;
         }
     }
 }

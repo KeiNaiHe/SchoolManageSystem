@@ -16,6 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+
+    }
 }
 
 dependencies {
@@ -41,4 +47,9 @@ dependencies {
     implementation files('libs/MPAndroidChart3.0.3.jar')
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
     implementation 'com.miguelcatalan:materialsearchview:1.4.0'
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'top.zibin:BottomDialog:1.0.1'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'top.zibin:Luban:1.1.5'
 }

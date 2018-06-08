@@ -14,9 +14,9 @@
         <FrameLayout
             android:id="@+id/fl_main_content"
             android:layout_width="match_parent"
-            android:background="@color/colorWhite"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:background="@color/colorWhite" />
 
 
         <LinearLayout
@@ -40,6 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:clickable="false"
                     android:gravity="center"
                     android:src="@mipmap/tab_home_normal" />
 
@@ -47,6 +48,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:clickable="false"
                     android:text="首页" />
             </LinearLayout>
 
@@ -63,6 +65,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:clickable="false"
                     android:gravity="center"
                     android:src="@mipmap/tab_dynamic_normal" />
 
@@ -70,6 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:clickable="false"
                     android:text="动态" />
 
             </LinearLayout>
@@ -93,6 +97,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:clickable="false"
                     android:gravity="center"
                     android:src="@mipmap/tab_message_normal" />
 
@@ -100,6 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:clickable="false"
                     android:text="信息" />
             </LinearLayout>
 
@@ -117,6 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@null"
+                    android:clickable="false"
                     android:gravity="center"
                     android:src="@mipmap/tab_me_normal" />
 
@@ -124,6 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:clickable="false"
                     android:text="我的" />
             </LinearLayout>
 
@@ -147,6 +155,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@null"
+            android:clickable="false"
             android:gravity="center_horizontal"
             android:src="@mipmap/tab_publish" />
 
@@ -154,6 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
+            android:clickable="false"
             android:gravity="center_horizontal"
             android:text="发布" />
     </LinearLayout>

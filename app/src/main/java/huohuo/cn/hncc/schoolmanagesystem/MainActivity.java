@@ -2,6 +2,7 @@ package huohuo.cn.hncc.schoolmanagesystem;
 
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
@@ -18,6 +19,7 @@ import huohuo.cn.hncc.schoolmanagesystem.dynamicpage.DynamicMainFragment;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.HomeFragment;
 import huohuo.cn.hncc.schoolmanagesystem.messagepage.MessageFragment;
 import huohuo.cn.hncc.schoolmanagesystem.mypage.MyFragment;
+import huohuo.cn.hncc.schoolmanagesystem.publish.PublishActivity;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -82,46 +84,65 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mLl_message = (LinearLayout) findViewById(R.id.ll_main_message);
         mLl_me = (LinearLayout) findViewById(R.id.ll_main_me);
 
+        LinearLayout ll_publish = (LinearLayout) findViewById(R.id.ll_main_publish);
         mFl_main = (FrameLayout) findViewById(R.id.fl_main_content);
+
+
+        ll_publish.setOnClickListener(this);
     }
 
 
     @Override
     public void onClick(View v) {
-        FragmentTransaction trans = getFragmentTrans();
 
+        FragmentTransaction trans;
         switch (v.getId()) {
             case R.id.ll_main_dynamic://动态
+                trans = getFragmentTrans();
                 if (mDynaragment == null) {
                     mDynaragment = new DynamicMainFragment();
                 }
                 trans.replace(R.id.fl_main_content, mDynaragment);
                 transportImageClick(mIv_dynamic);
+                trans.commit();
                 break;
             case R.id.ll_main_home://首页
+                trans = getFragmentTrans();
                 if (mHomeFragment == null) {
                     mHomeFragment = new HomeFragment();
                 }
                 trans.replace(R.id.fl_main_content, mHomeFragment);
                 transportImageClick(mIv_home);
+                trans.commit();
                 break;
             case R.id.ll_main_me://我的
+                trans = getFragmentTrans();
                 if (mMyFragment == null) {
                     mMyFragment = new MyFragment();
                 }
                 trans.replace(R.id.fl_main_content, mMyFragment);
                 transportImageClick(mIv_me);
+                trans.commit();
                 break;
             case R.id.ll_main_message://messsage
+                trans = getFragmentTrans();
                 if (mMessFragment == null) {
                     mMessFragment = new MessageFragment();
                 }
                 trans.replace(R.id.fl_main_content, mMessFragment);
                 transportImageClick(mIv_message);
+                trans.commit();
+                break;
+            case R.id.ll_main_publish:
+                startActivity(new Intent(MainActivity.this, PublishActivity.class));
+                //动画设置
+//                overridePendingTransition(R.anim.publish_activity_anim, 0);
                 break;
             default:
+                break;
+
         }
-        trans.commit();
+
     }
 
 
@@ -149,7 +170,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         FragmentManager supportManager = getSupportFragmentManager();
         return supportManager.beginTransaction();
     }
-
 
 
 }

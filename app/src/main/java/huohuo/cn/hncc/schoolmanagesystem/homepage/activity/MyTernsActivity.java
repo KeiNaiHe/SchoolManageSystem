@@ -1,6 +1,7 @@
 package huohuo.cn.hncc.schoolmanagesystem.homepage.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -16,9 +17,11 @@ import java.util.List;
 import huohuo.cn.hncc.guidepage.R;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.MyTerns_ChildItemBean;
 import huohuo.cn.hncc.schoolmanagesystem.homepage.MyTerns_SuperItemBean;
+import huohuo.cn.hncc.schoolmanagesystem.homepage.StudentInfoActivity;
 
 /**
  * Created by Windows on 2018/5/3.
+ *
  */
 
 public class MyTernsActivity extends Activity {
@@ -45,7 +48,7 @@ public class MyTernsActivity extends Activity {
         mIb_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                onBackPressed();
+                finish();
             }
         });
 
@@ -138,7 +141,15 @@ public class MyTernsActivity extends Activity {
             public boolean isChildSelectable(int groupPosition, int childPosition) {
                 //子类item显示事件
 
-                return false;
+                return true;
+            }
+        });
+
+        mExpandListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
+            @Override
+            public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
+                startActivity(new Intent(MyTernsActivity.this, StudentInfoActivity.class));
+                return true;
             }
         });
     }
@@ -182,12 +193,12 @@ public class MyTernsActivity extends Activity {
         MyTerns_ChildItemBean bean2 = new MyTerns_ChildItemBean();
         bean2.setName("刘天");
         bean2.setObjPhoto("刘天");
-        bean2.setStuNo("20187459");
+        bean2.setStuNo("2018147459");
         list1.add(bean2);
         MyTerns_ChildItemBean bean3 = new MyTerns_ChildItemBean();
         bean3.setName("赵柳");
         bean3.setObjPhoto("赵柳");
-        bean3.setStuNo("201765425");
+        bean3.setStuNo("2017265425");
         list1.add(bean3);
 
         MyTerns_SuperItemBean superItemBean = new MyTerns_SuperItemBean();

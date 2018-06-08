@@ -2,9 +2,8 @@ package huohuo.cn.hncc.schoolmanagesystem;
 
 import android.app.Application;
 
-
+import com.baidu.mapapi.SDKInitializer;
 import com.facebook.drawee.backends.pipeline.Fresco;
-
 
 import huohuo.cn.hncc.schoolmanagesystem.homepage.engine.Engine;
 import retrofit2.Retrofit;
@@ -31,6 +30,15 @@ public class App extends Application {
                 .build().create(Engine.class);
 
         Fresco.initialize(this);
+
+
+//        locationService = new LocationService(getApplicationContext());
+//        mVibrator =(Vibrator)getApplicationContext().getSystemService(Service.VIBRATOR_SERVICE);
+        SDKInitializer.initialize(getApplicationContext());
+
+
+
+
     }
 
 
@@ -41,4 +49,7 @@ public class App extends Application {
     public Engine getEngine() {
         return mEngine;
     }
+
+
+
 }

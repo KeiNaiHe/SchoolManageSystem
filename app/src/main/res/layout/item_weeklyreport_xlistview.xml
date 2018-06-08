@@ -23,40 +23,49 @@
                 android:layout_height="match_parent" />
         </LinearLayout>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_toEndOf="@id/ll_temporary"
+    android:layout_toRightOf="@id/ll_temporary"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_weeklyReportItem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
 
-        <TextView
-            android:id="@+id/tv_weeklyReportItem_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@id/ll_temporary"
-            android:layout_toRightOf="@id/ll_temporary"
-            android:text="姓名"
-            android:textSize="16sp" />
+        android:text="姓名"
+        android:textSize="16sp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+    <TextView
+        android:id="@+id/tv_weeklyReportItem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_below="@id/tv_weeklyReportItem_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/ll_temporary"
+        android:layout_toRightOf="@id/ll_temporary"
+        android:text="5月5日 12:12"
+        android:textSize="13sp" />
+    <!--个性签名-->
+    <TextView
+        android:id="@+id/tv_weeklyReportItem_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
 
-        <TextView
-            android:id="@+id/tv_weeklyReportItem_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_weeklyReportItem_name"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@id/ll_temporary"
-            android:layout_toRightOf="@id/ll_temporary"
-            android:text="5月5日 12:12"
-            android:textSize="13sp" />
-        <!--个性签名-->
-        <TextView
-            android:id="@+id/tv_weeklyReportItem_signature"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/tv_weeklyReportItem_time"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="10dp"
-            android:layout_toRightOf="@id/tv_weeklyReportItem_time"
-            android:singleLine="true"
-            android:text="我是个性签名，有字数限制" />
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+
+        android:singleLine="true"
+        android:text="我是个性签名，有字数限制" />
+</LinearLayout>
+
+</LinearLayout>
+
 
     </RelativeLayout>
 

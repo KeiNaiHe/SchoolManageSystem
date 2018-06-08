@@ -18,12 +18,12 @@
                 android:id="@+id/ib_studentInfo_back"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
                 android:background="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
                 android:src="@mipmap/actionbar_dark_back_icon" />
 
             <TextView
@@ -41,13 +41,13 @@
         <!--头像行-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="130dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="80dp"
-                android:paddingTop="20dp">
+                android:paddingTop="10dp">
 
                 <View
                     android:layout_width="0dp"
@@ -104,7 +104,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:gravity="center"
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp">
@@ -112,10 +112,11 @@
                 <TextView
                     android:id="@+id/tv_studentInfo_name"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
                     android:text="江山易改"
+                    android:gravity="center"
                     android:textColor="@color/colorBlack"
-                    android:textSize="18sp"
+                    android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -129,80 +130,33 @@
                     android:textSize="12sp" />
             </LinearLayout>
         </LinearLayout>
-        <!--粉丝关注行-->
+
+        <!--个性签名-->
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="30dp"
+            android:gravity="center">
 
-            <LinearLayout
-                android:id="@+id/ll_studentInfo_attention"
+            <TextView
+                android:id="@+id/tv_studentInfo_signature"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="54"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:text="关注" />
-
-            </LinearLayout>
-
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:background="@color/colorBlack" />
-
-
-            <LinearLayout
-                android:id="@+id/ll_studentInfo_fans"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="45"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginStart="5dp"
-                    android:text="粉丝" />
-            </LinearLayout>
-
-
+                android:singleLine="true"
+                android:text="这个人比较懒什么都没有留下" />
         </LinearLayout>
+
         <!--周记行-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="30dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <LinearLayout
                 android:id="@+id/ll_studentInfo_signInCount"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -210,6 +164,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:text="00"
                     android:textStyle="bold" />
 
@@ -218,6 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:layout_marginStart="5dp"
+                    android:gravity="center"
                     android:text="签到" />
             </LinearLayout>
 
@@ -229,7 +185,7 @@
             <LinearLayout
                 android:id="@+id/ll_studentInfo_weekReportCount"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -241,7 +197,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -254,27 +209,15 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorBlack" />
 
-            <LinearLayout
-                android:id="@+id/ll_studentInfo_employer"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="77"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <Button
+                    android:id="@+id/btn_studentInfo_intern"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="5dp"
                     android:layout_marginStart="5dp"
+                    android:background="@null"
                     android:text="实习岗位" />
-            </LinearLayout>
 
         </LinearLayout>
         <!--高5dp的灰条-->
@@ -367,7 +310,7 @@
         </LinearLayout>
 
 
-        <!--app账号-->
+        <!--昵称-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -378,12 +321,33 @@
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:text="APP账号"
+                android:text="昵称"
                 android:textColor="@color/colorBlack"
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tv_StudentInfo_account"
+                android:id="@+id/tv_StudentInfo_nickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test" />
+        </LinearLayout>
+        <!--学号-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15sp"
+            android:layout_marginRight="15sp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="学号"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_StudentInfo_stuNo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="test" />
@@ -404,6 +368,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/tv_studentInfo_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="test" />

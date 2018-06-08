@@ -29,7 +29,7 @@ import huohuo.cn.hncc.schoolmanagesystem.GlideImageUtil;
 public class XListViewAdapter extends BaseAdapter {
 
     private final Context context;
-    private List<XListViewBean> mList_XListView;
+    private List<WeeklyReportBean> mList_XListView;
     private final int mLayoutResId;
     private final Activity activity;
     //头像
@@ -57,7 +57,7 @@ public class XListViewAdapter extends BaseAdapter {
     public XListViewAdapter(Context context, int layoutResId, Activity activity) {
         this.context = context;
         this.mLayoutResId = layoutResId;
-        mList_XListView = new ArrayList<XListViewBean>();
+        mList_XListView = new ArrayList<WeeklyReportBean>();
         this.activity = activity;
     }
 
@@ -122,7 +122,7 @@ public class XListViewAdapter extends BaseAdapter {
     }
 
     private void initItemData(int position) {
-        XListViewBean xListBean = mList_XListView.get(position);
+        WeeklyReportBean xListBean = mList_XListView.get(position);
 
         /**
          * 图片全部使用URL
@@ -148,7 +148,7 @@ public class XListViewAdapter extends BaseAdapter {
 
     }
 
-    public void setXListViewData(List<XListViewBean> list) {
+    public void setXListViewData(List<WeeklyReportBean> list) {
         this.mList_XListView = list;
     }
 }

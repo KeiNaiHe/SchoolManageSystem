@@ -1,6 +1,5 @@
 package huohuo.cn.hncc.schoolmanagesystem.messagepage;
 
-import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -20,7 +19,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import huohuo.cn.hncc.guidepage.R;
-import huohuo.cn.hncc.schoolmanagesystem.database.DBUtil;
 import huohuo.cn.hncc.schoolmanagesystem.database.ManagerDatabase;
 
 /**
@@ -134,14 +132,14 @@ public class FriendSearchActivity extends AppCompatActivity {
     /**
      * 插入数据
      */
-    private void insertData(String tempName) {
-        mWritableDatabase = ManagerDatabase.obtain(this).getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-        contentValues.put("search_record",tempName);
-        contentValues.put("search_time",System.currentTimeMillis());
-        mWritableDatabase.insert(DBUtil.SEARCH_RECORD_TABLE,null,contentValues);
-        mWritableDatabase.close();
-    }
+//    private void insertData(String tempName) {
+//        mWritableDatabase = ManagerDatabase.obtain(this).getWritableDatabase();
+//        ContentValues contentValues = new ContentValues();
+//        contentValues.put("search_record",tempName);
+//        contentValues.put("search_time",System.currentTimeMillis());
+//        mWritableDatabase.insert(DBUtil.SEARCH_RECORD_TABLE,null,contentValues);
+//        mWritableDatabase.close();
+//    }
 
     /**
      * 模糊查询数据
